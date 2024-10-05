@@ -1,0 +1,253 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sat Oct  5 17:03:59 2024
+# Process ID: 5164
+# Current directory: F:/Education/FPGA/ZedBoardLabs/Lab2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15544 F:\Education\FPGA\ZedBoardLabs\Lab2\Lab2.xpr
+# Log file: F:/Education/FPGA/ZedBoardLabs/Lab2/vivado.log
+# Journal file: F:/Education/FPGA/ZedBoardLabs/Lab2\vivado.jou
+# Running On: DESKTOP-2ENERJB, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 6, Host memory: 34191 MB
+#-----------------------------------------------------------
+start_gui
+open_project F:/Education/FPGA/ZedBoardLabs/Lab2/Lab2.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.3 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.3/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.1 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.1 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at F:/Xilinx/Vitis/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'F:/Education/FPGA/ZedBoardLabs/Lab2/Lab2.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vitis/Vivado/2023.1/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'system.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+system_led_ip_0_0
+
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:08 . Memory (MB): peak = 1985.074 ; gain = 470.340
+update_compile_order -fileset sources_1
+open_bd_design {F:/Education/FPGA/ZedBoardLabs/Lab1/system/system.bd}
+Reading block design file <F:/Education/FPGA/ZedBoardLabs/Lab1/system/system.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - switches
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - buttons
+Adding component instance block -- xilinx.com:user:led_ip:1.0 - led_ip
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_0
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - axi_bram_ctrl_0_bram
+Successfully read diagram <system> from block design file <F:/Education/FPGA/ZedBoardLabs/Lab1/system/system.bd>
+delete_bd_objs [get_bd_nets led_ip_LED] [get_bd_intf_nets ps7_0_axi_periph_M02_AXI] [get_bd_cells led_ip]
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M03_AXI] [get_bd_intf_nets axi_bram_ctrl_0_BRAM_PORTA] [get_bd_cells axi_bram_ctrl_0]
+delete_bd_objs [get_bd_cells axi_bram_ctrl_0_bram]
+delete_bd_objs [get_bd_ports LED]
+regenerate_bd_layout
+startgroup
+set_property CONFIG.NUM_MI {2} [get_bd_cells ps7_0_axi_periph]
+endgroup
+regenerate_bd_layout
+validate_bd_design
+WARNING: [BD 41-1771] Block interface /buttons/GPIO has associated board param 'GPIO_BOARD_INTERFACE', which is set to board part interface 'btns_5bits'. This interface is connected to an external interface /buttons, whose name 'buttons' does not match with the board interface name 'btns_5bits'.
+This is a visual-only issue - this interface /buttons/GPIO will be connected to board interface 'btns_5bits'. If desired, please change the name of this port /buttons manually.
+WARNING: [BD 41-1771] Block interface /switches/GPIO has associated board param 'GPIO_BOARD_INTERFACE', which is set to board part interface 'sws_8bits'. This interface is connected to an external interface /switches, whose name 'switches' does not match with the board interface name 'sws_8bits'.
+This is a visual-only issue - this interface /switches/GPIO will be connected to board interface 'sws_8bits'. If desired, please change the name of this port /switches manually.
+make_wrapper -files [get_files F:/Education/FPGA/ZedBoardLabs/Lab1/system/system.bd] -top
+INFO: [BD 41-1662] The design 'system.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-1771] Block interface /buttons/GPIO has associated board param 'GPIO_BOARD_INTERFACE', which is set to board part interface 'btns_5bits'. This interface is connected to an external interface /buttons, whose name 'buttons' does not match with the board interface name 'btns_5bits'.
+This is a visual-only issue - this interface /buttons/GPIO will be connected to board interface 'btns_5bits'. If desired, please change the name of this port /buttons manually.
+WARNING: [BD 41-1771] Block interface /switches/GPIO has associated board param 'GPIO_BOARD_INTERFACE', which is set to board part interface 'sws_8bits'. This interface is connected to an external interface /switches, whose name 'switches' does not match with the board interface name 'sws_8bits'.
+This is a visual-only issue - this interface /switches/GPIO will be connected to board interface 'sws_8bits'. If desired, please change the name of this port /switches manually.
+Wrote  : <F:\Education\FPGA\ZedBoardLabs\Lab1\system\system.bd> 
+Wrote  : <F:/Education/FPGA/ZedBoardLabs/Lab1/system/ui/bd_c954508f.ui> 
+Verilog Output written to : F:/Education/FPGA/ZedBoardLabs/Lab1/system/synth/system.v
+Verilog Output written to : F:/Education/FPGA/ZedBoardLabs/Lab1/system/sim/system.v
+Verilog Output written to : F:/Education/FPGA/ZedBoardLabs/Lab1/system/hdl/system_wrapper.v
+generate_target all [get_files  F:/Education/FPGA/ZedBoardLabs/Lab1/system/system.bd]
+INFO: [BD 41-1662] The design 'system.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-1771] Block interface /buttons/GPIO has associated board param 'GPIO_BOARD_INTERFACE', which is set to board part interface 'btns_5bits'. This interface is connected to an external interface /buttons, whose name 'buttons' does not match with the board interface name 'btns_5bits'.
+This is a visual-only issue - this interface /buttons/GPIO will be connected to board interface 'btns_5bits'. If desired, please change the name of this port /buttons manually.
+WARNING: [BD 41-1771] Block interface /switches/GPIO has associated board param 'GPIO_BOARD_INTERFACE', which is set to board part interface 'sws_8bits'. This interface is connected to an external interface /switches, whose name 'switches' does not match with the board interface name 'sws_8bits'.
+This is a visual-only issue - this interface /switches/GPIO will be connected to board interface 'sws_8bits'. If desired, please change the name of this port /switches manually.
+Wrote  : <F:/Education/FPGA/ZedBoardLabs/Lab1/system/ui/bd_c954508f.ui> 
+Verilog Output written to : F:/Education/FPGA/ZedBoardLabs/Lab1/system/synth/system.v
+Verilog Output written to : F:/Education/FPGA/ZedBoardLabs/Lab1/system/sim/system.v
+Verilog Output written to : F:/Education/FPGA/ZedBoardLabs/Lab1/system/hdl/system_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file F:/Education/FPGA/ZedBoardLabs/Lab1/system/hw_handoff/system.hwh
+Generated Hardware Definition File F:/Education/FPGA/ZedBoardLabs/Lab1/system/synth/system.hwdef
+catch { config_ip_cache -export [get_ips -all system_axi_gpio_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_axi_gpio_0_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 0416cdb334b0adeb to dir: f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_axi_gpio_0_0
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file f:/Education/FPGA/ZedBoardLabs/Lab2/Lab2.cache/ip/2023.1/0/4/0416cdb334b0adeb/system_axi_gpio_0_0.dcp to f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file f:/Education/FPGA/ZedBoardLabs/Lab2/Lab2.cache/ip/2023.1/0/4/0416cdb334b0adeb/system_axi_gpio_0_0_sim_netlist.v to f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file f:/Education/FPGA/ZedBoardLabs/Lab2/Lab2.cache/ip/2023.1/0/4/0416cdb334b0adeb/system_axi_gpio_0_0_sim_netlist.vhdl to f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file f:/Education/FPGA/ZedBoardLabs/Lab2/Lab2.cache/ip/2023.1/0/4/0416cdb334b0adeb/system_axi_gpio_0_0_stub.v to f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file f:/Education/FPGA/ZedBoardLabs/Lab2/Lab2.cache/ip/2023.1/0/4/0416cdb334b0adeb/system_axi_gpio_0_0_stub.vhdl to f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_axi_gpio_0_0, cache-ID = 0416cdb334b0adeb; cache size = 2.180 MB.
+catch { [ delete_ip_run [get_ips -all system_axi_gpio_0_0] ] }
+catch { config_ip_cache -export [get_ips -all system_xbar_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_xbar_0
+catch { config_ip_cache -export [get_ips -all system_rst_ps7_0_100M_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_rst_ps7_0_100M_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry da3ab063983fd0ed to dir: f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_rst_ps7_0_100M_0
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file f:/Education/FPGA/ZedBoardLabs/Lab2/Lab2.cache/ip/2023.1/d/a/da3ab063983fd0ed/system_rst_ps7_0_100M_0.dcp to f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file f:/Education/FPGA/ZedBoardLabs/Lab2/Lab2.cache/ip/2023.1/d/a/da3ab063983fd0ed/system_rst_ps7_0_100M_0_sim_netlist.v to f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file f:/Education/FPGA/ZedBoardLabs/Lab2/Lab2.cache/ip/2023.1/d/a/da3ab063983fd0ed/system_rst_ps7_0_100M_0_sim_netlist.vhdl to f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file f:/Education/FPGA/ZedBoardLabs/Lab2/Lab2.cache/ip/2023.1/d/a/da3ab063983fd0ed/system_rst_ps7_0_100M_0_stub.v to f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file f:/Education/FPGA/ZedBoardLabs/Lab2/Lab2.cache/ip/2023.1/d/a/da3ab063983fd0ed/system_rst_ps7_0_100M_0_stub.vhdl to f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_rst_ps7_0_100M_0, cache-ID = da3ab063983fd0ed; cache size = 2.180 MB.
+catch { [ delete_ip_run [get_ips -all system_rst_ps7_0_100M_0] ] }
+catch { config_ip_cache -export [get_ips -all system_axi_gpio_0_2] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_axi_gpio_0_2
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 6a8ea24efe7ea67e to dir: f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_axi_gpio_0_2
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file f:/Education/FPGA/ZedBoardLabs/Lab2/Lab2.cache/ip/2023.1/6/a/6a8ea24efe7ea67e/system_axi_gpio_0_2.dcp to f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_axi_gpio_0_2/system_axi_gpio_0_2.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_axi_gpio_0_2/system_axi_gpio_0_2.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file f:/Education/FPGA/ZedBoardLabs/Lab2/Lab2.cache/ip/2023.1/6/a/6a8ea24efe7ea67e/system_axi_gpio_0_2_sim_netlist.v to f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_axi_gpio_0_2/system_axi_gpio_0_2_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_axi_gpio_0_2/system_axi_gpio_0_2_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file f:/Education/FPGA/ZedBoardLabs/Lab2/Lab2.cache/ip/2023.1/6/a/6a8ea24efe7ea67e/system_axi_gpio_0_2_sim_netlist.vhdl to f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_axi_gpio_0_2/system_axi_gpio_0_2_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_axi_gpio_0_2/system_axi_gpio_0_2_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file f:/Education/FPGA/ZedBoardLabs/Lab2/Lab2.cache/ip/2023.1/6/a/6a8ea24efe7ea67e/system_axi_gpio_0_2_stub.v to f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_axi_gpio_0_2/system_axi_gpio_0_2_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_axi_gpio_0_2/system_axi_gpio_0_2_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file f:/Education/FPGA/ZedBoardLabs/Lab2/Lab2.cache/ip/2023.1/6/a/6a8ea24efe7ea67e/system_axi_gpio_0_2_stub.vhdl to f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_axi_gpio_0_2/system_axi_gpio_0_2_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_axi_gpio_0_2/system_axi_gpio_0_2_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_axi_gpio_0_2, cache-ID = 6a8ea24efe7ea67e; cache size = 2.181 MB.
+catch { [ delete_ip_run [get_ips -all system_axi_gpio_0_2] ] }
+catch { config_ip_cache -export [get_ips -all system_auto_pc_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_auto_pc_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry d8e790861119c502 to dir: f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_auto_pc_0
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file f:/Education/FPGA/ZedBoardLabs/Lab2/Lab2.cache/ip/2023.1/d/8/d8e790861119c502/system_auto_pc_0.dcp to f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_auto_pc_0/system_auto_pc_0.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_auto_pc_0/system_auto_pc_0.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file f:/Education/FPGA/ZedBoardLabs/Lab2/Lab2.cache/ip/2023.1/d/8/d8e790861119c502/system_auto_pc_0_sim_netlist.v to f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_auto_pc_0/system_auto_pc_0_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_auto_pc_0/system_auto_pc_0_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file f:/Education/FPGA/ZedBoardLabs/Lab2/Lab2.cache/ip/2023.1/d/8/d8e790861119c502/system_auto_pc_0_sim_netlist.vhdl to f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_auto_pc_0/system_auto_pc_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_auto_pc_0/system_auto_pc_0_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file f:/Education/FPGA/ZedBoardLabs/Lab2/Lab2.cache/ip/2023.1/d/8/d8e790861119c502/system_auto_pc_0_stub.v to f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_auto_pc_0/system_auto_pc_0_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_auto_pc_0/system_auto_pc_0_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file f:/Education/FPGA/ZedBoardLabs/Lab2/Lab2.cache/ip/2023.1/d/8/d8e790861119c502/system_auto_pc_0_stub.vhdl to f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_auto_pc_0/system_auto_pc_0_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_auto_pc_0/system_auto_pc_0_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_pc_0, cache-ID = d8e790861119c502; cache size = 2.181 MB.
+export_ip_user_files -of_objects [get_files F:/Education/FPGA/ZedBoardLabs/Lab1/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/Education/FPGA/ZedBoardLabs/Lab1/system/system.bd]
+launch_runs system_processing_system7_0_0_synth_1 system_xbar_0_synth_1 -jobs 12
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_xbar_0
+[Sat Oct  5 17:14:20 2024] Launched system_processing_system7_0_0_synth_1, system_xbar_0_synth_1...
+Run output will be captured here:
+system_processing_system7_0_0_synth_1: F:/Education/FPGA/ZedBoardLabs/Lab2/Lab2.runs/system_processing_system7_0_0_synth_1/runme.log
+system_xbar_0_synth_1: F:/Education/FPGA/ZedBoardLabs/Lab2/Lab2.runs/system_xbar_0_synth_1/runme.log
+export_simulation -of_objects [get_files F:/Education/FPGA/ZedBoardLabs/Lab1/system/system.bd] -directory F:/Education/FPGA/ZedBoardLabs/Lab2/Lab2.ip_user_files/sim_scripts -ip_user_files_dir F:/Education/FPGA/ZedBoardLabs/Lab2/Lab2.ip_user_files -ipstatic_source_dir F:/Education/FPGA/ZedBoardLabs/Lab2/Lab2.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/Education/FPGA/ZedBoardLabs/Lab2/Lab2.cache/compile_simlib/modelsim} {questa=F:/Education/FPGA/ZedBoardLabs/Lab2/Lab2.cache/compile_simlib/questa} {riviera=F:/Education/FPGA/ZedBoardLabs/Lab2/Lab2.cache/compile_simlib/riviera} {activehdl=F:/Education/FPGA/ZedBoardLabs/Lab2/Lab2.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+save_project_as Lab6 F:/Education/FPGA/ZedBoardLabs/Lab6 -force
+set_property  ip_repo_paths  F:/Education/FPGA/xup_embedded_system_design_flow/sources/lab6 [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Education/FPGA/xup_embedded_system_design_flow/sources/lab6'.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+regenerate_bd_layout
+set_property name leds [get_bd_cells axi_gpio_0]
+startgroup
+set_property CONFIG.NUM_MI {3} [get_bd_cells ps7_0_axi_periph]
+endgroup
+set_property CONFIG.GPIO_BOARD_INTERFACE {leds_8bits} [get_bd_cells leds]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {leds_8bits ( LED ) } Manual_Source {Auto}}  [get_bd_intf_pins leds/GPIO]
+INFO: [board_rule 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /leds]
+INFO: [board_rule 100-100] set_property CONFIG.GPIO_BOARD_INTERFACE leds_8bits [get_bd_cells /leds]
+INFO: [BoardRule 102-8] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 leds_8bits
+INFO: [BoardRule 102-9] connect_bd_intf_net /leds_8bits /leds/GPIO
+connect_bd_intf_net [get_bd_intf_pins leds/S_AXI] -boundary_type upper [get_bd_intf_pins ps7_0_axi_periph/M02_AXI]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {New Clocking Wizard} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins leds/s_axi_aclk]
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [BD 5-455] Automation on '/ps7_0_axi_periph/M02_ACLK' will not be run, since it is obsolete due to previously run automations
+endgroup
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {New Clocking Wizard} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins leds/s_axi_aclk]'
+INFO: [Common 17-17] undo 'startgroup'
+undo
+INFO: [Common 17-17] undo 'connect_bd_intf_net [get_bd_intf_pins leds/S_AXI] -boundary_type upper [get_bd_intf_pins ps7_0_axi_periph/M02_AXI]'
+set_property location {2.5 901 406} [get_bd_cells leds]
+undo
+INFO: [Common 17-17] undo 'set_property location {2.5 901 406} [get_bd_cells leds]'
+undo
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {leds_8bits ( LED ) } Manual_Source {Auto}}  [get_bd_intf_pins leds/GPIO]'
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {leds_8bits ( LED ) } Manual_Source {Auto}}  [get_bd_intf_pins leds/GPIO]
+INFO: [board_rule 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /leds]
+INFO: [board_rule 100-100] set_property CONFIG.GPIO_BOARD_INTERFACE leds_8bits [get_bd_cells /leds]
+INFO: [BoardRule 102-8] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 leds_8bits
+INFO: [BoardRule 102-9] connect_bd_intf_net /leds_8bits /leds/GPIO
+connect_bd_net [get_bd_pins leds/s_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins leds/s_axi_aresetn] [get_bd_pins rst_ps7_0_100M/peripheral_aresetn]
+connect_bd_intf_net [get_bd_intf_pins leds/S_AXI] -boundary_type upper [get_bd_intf_pins ps7_0_axi_periph/M02_AXI]
+regenerate_bd_layout
+connect_bd_net [get_bd_pins ps7_0_axi_periph/M02_ACLK] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins ps7_0_axi_periph/M02_ARESETN] [get_bd_pins rst_ps7_0_100M/peripheral_aresetn]
+regenerate_bd_layout
+validate_bd_design
+ERROR: [BD 41-1380] A connection to the interface 'UART_0' of '/processing_system7_0' is required.
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+save_bd_design
