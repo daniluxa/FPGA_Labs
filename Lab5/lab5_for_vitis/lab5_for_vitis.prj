@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="lab5_for_vitis" location="F:/Education/FPGA_Labs/Lab5/lab5_for_vitis" platform="F:/Education/FPGA_Labs/Lab5/Lab5_Block_Design_wrapper/export/Lab5_Block_Design_wrapper/Lab5_Block_Design_wrapper.xpfm" platformUID="xilinx:zedboard::0.0(custom)" systemProject="lab5_for_vitis_system" sysConfig="Lab5_Block_Design_wrapper" runtime="cpp" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="0c768bfc067a56e43b11b3d1718718bb">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1679692035">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.556143223" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>

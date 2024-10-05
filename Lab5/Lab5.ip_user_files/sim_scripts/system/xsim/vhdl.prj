@@ -1,0 +1,7 @@
+vhdl xil_defaultlib  \
+"f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_axi_gpio_0_0/sim/system_axi_gpio_0_0.vhd" \
+"f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_rst_ps7_0_100M_0/sim/system_rst_ps7_0_100M_0.vhd" \
+"f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_axi_gpio_0_2/sim/system_axi_gpio_0_2.vhd" \
+
+# Do not sort compile order
+nosort
