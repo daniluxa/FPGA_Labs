@@ -1,0 +1,31 @@
+20:32:58 DEBUG : Logs will be stored at 'F:/Education/FPGA_Labs/Lab4/IDE.log'.
+20:33:01 INFO  : Launching XSCT server: xsct.bat -n  -interactive F:\Education\FPGA_Labs\Lab4\temp_xsdb_launch_script.tcl
+20:33:01 INFO  : Registering command handlers for Vitis TCF services
+20:33:02 INFO  : Platform repository initialization has completed.
+20:33:03 INFO  : XSCT server has started successfully.
+20:33:04 INFO  : Successfully done setting XSCT server connection channel  
+20:33:04 INFO  : plnx-install-location is set to ''
+20:33:04 INFO  : Successfully done query RDI_DATADIR 
+20:33:04 INFO  : Successfully done setting workspace for the tool. 
+20:34:44 DEBUG : Logs will be stored at 'F:/Education/FPGA_Labs/Lab4/IDE.log'.
+20:34:46 INFO  : Launching XSCT server: xsct.bat -n  -interactive F:\Education\FPGA_Labs\Lab4\temp_xsdb_launch_script.tcl
+20:34:46 INFO  : Registering command handlers for Vitis TCF services
+20:34:46 INFO  : Platform repository initialization has completed.
+20:34:48 INFO  : XSCT server has started successfully.
+20:34:48 INFO  : plnx-install-location is set to ''
+20:34:48 INFO  : Successfully done setting XSCT server connection channel  
+20:34:48 INFO  : Successfully done query RDI_DATADIR 
+20:34:48 INFO  : Successfully done setting workspace for the tool. 
+20:36:18 INFO  : Result from executing command 'getProjects': Lab4_Block_Design_wrapper
+20:36:18 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202310_1|F:/Xilinx/Vitis/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|F:/Xilinx/Vitis/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|F:/Xilinx/Vitis/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+20:36:18 WARN  : An unexpected exception occurred in the module 'platform project logging'
+20:36:18 INFO  : Platform 'Lab4_Block_Design_wrapper' is added to custom repositories.
+20:36:24 INFO  : Platform 'Lab4_Block_Design_wrapper' is added to custom repositories.
+20:37:59 INFO  : Result from executing command 'getProjects': Lab4_Block_Design_wrapper
+20:37:59 INFO  : Result from executing command 'getPlatforms': Lab4_Block_Design_wrapper|F:/Education/FPGA_Labs/Lab4/Lab4_Block_Design_wrapper/export/Lab4_Block_Design_wrapper/Lab4_Block_Design_wrapper.xpfm;xilinx_zcu102_base_202310_1|F:/Xilinx/Vitis/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|F:/Xilinx/Vitis/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|F:/Xilinx/Vitis/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+20:38:00 INFO  : Checking for BSP changes to sync application flags for project 'lab4_for_vitis'...
+20:39:38 INFO  : Checking for BSP changes to sync application flags for project 'lab4_for_vitis'...
+20:40:55 INFO  : No changes in MSS file content so sources will not be generated.
+20:41:22 INFO  : Result from executing command 'getProjects': Lab4_Block_Design_wrapper
+20:41:22 INFO  : Result from executing command 'getPlatforms': Lab4_Block_Design_wrapper|F:/Education/FPGA_Labs/Lab4/Lab4_Block_Design_wrapper/export/Lab4_Block_Design_wrapper/Lab4_Block_Design_wrapper.xpfm;xilinx_zcu102_base_202310_1|F:/Xilinx/Vitis/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|F:/Xilinx/Vitis/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|F:/Xilinx/Vitis/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+20:41:23 INFO  : Checking for BSP changes to sync application flags for project 'lab4_for_vitis'...
