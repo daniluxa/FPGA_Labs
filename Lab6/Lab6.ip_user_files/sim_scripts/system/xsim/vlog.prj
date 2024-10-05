@@ -1,0 +1,10 @@
+verilog xil_defaultlib --include "F:/Xilinx/Vitis/Vivado/2023.1/data/xilinx_vip/include" --include "../../../../../Lab1/system/ipshared/ec67/hdl" --include "../../../../../Lab1/system/ipshared/aed8/hdl" \
+"f:/Education/FPGA/ZedBoardLabs/Lab1/system/ip/system_processing_system7_0_0/sim/system_processing_system7_0_0.v" \
+"../../../bd/system/ip/system_xbar_0/sim/system_xbar_0.v" \
+"../../../bd/system/sim/system.v" \
+"../../../bd/system/ip/system_auto_pc_0/sim/system_auto_pc_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

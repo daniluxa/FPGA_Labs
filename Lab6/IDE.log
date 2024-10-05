@@ -1,0 +1,16 @@
+21:11:45 DEBUG : Logs will be stored at 'F:/Education/FPGA_Labs/Lab6/IDE.log'.
+21:11:47 INFO  : Launching XSCT server: xsct.bat -n  -interactive F:\Education\FPGA_Labs\Lab6\temp_xsdb_launch_script.tcl
+21:11:47 INFO  : Registering command handlers for Vitis TCF services
+21:11:48 INFO  : Platform repository initialization has completed.
+21:11:49 INFO  : XSCT server has started successfully.
+21:11:49 INFO  : Successfully done setting XSCT server connection channel  
+21:11:50 INFO  : plnx-install-location is set to ''
+21:11:50 INFO  : Successfully done setting workspace for the tool. 
+21:11:50 INFO  : Successfully done query RDI_DATADIR 
+21:12:51 INFO  : Result from executing command 'getProjects': Lab6_Block_Design_wrapper
+21:12:51 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202310_1|F:/Xilinx/Vitis/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|F:/Xilinx/Vitis/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|F:/Xilinx/Vitis/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+21:12:52 WARN  : An unexpected exception occurred in the module 'platform project logging'
+21:12:52 INFO  : Platform 'Lab6_Block_Design_wrapper' is added to custom repositories.
+21:13:03 INFO  : Platform 'Lab6_Block_Design_wrapper' is added to custom repositories.
+21:15:04 INFO  : Result from executing command 'getProjects': Lab6_Block_Design_wrapper
+21:15:04 INFO  : Result from executing command 'getPlatforms': Lab6_Block_Design_wrapper|F:/Education/FPGA_Labs/Lab6/Lab6_Block_Design_wrapper/export/Lab6_Block_Design_wrapper/Lab6_Block_Design_wrapper.xpfm;xilinx_zcu102_base_202310_1|F:/Xilinx/Vitis/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|F:/Xilinx/Vitis/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|F:/Xilinx/Vitis/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm

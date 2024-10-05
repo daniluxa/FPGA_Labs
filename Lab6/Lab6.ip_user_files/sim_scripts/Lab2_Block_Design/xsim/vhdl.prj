@@ -1,0 +1,9 @@
+vhdl xil_defaultlib  \
+"../../../bd/Lab2_Block_Design/ip/Lab2_Block_Design_axi_gpio_0_0/sim/Lab2_Block_Design_axi_gpio_0_0.vhd" \
+"../../../bd/Lab2_Block_Design/ip/Lab2_Block_Design_rst_ps7_0_100M_0/sim/Lab2_Block_Design_rst_ps7_0_100M_0.vhd" \
+"../../../bd/Lab2_Block_Design/ip/Lab2_Block_Design_axi_gpio_0_1/sim/Lab2_Block_Design_axi_gpio_0_1.vhd" \
+"../../../bd/Lab2_Block_Design/ip/Lab2_Block_Design_axi_gpio_0_2/sim/Lab2_Block_Design_axi_gpio_0_2.vhd" \
+"../../../bd/Lab2_Block_Design/ipshared/b180/math_ip.srcs/sources_1/imports/lab2/lab2_user_logic.vhd" \
+
+# Do not sort compile order
+nosort

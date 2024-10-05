@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file F:\Education\FPGA_Labs\Lab6\Lab6.runs\Lab2_Block_Design_ila_0_0_synth_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Разрешение отклонено

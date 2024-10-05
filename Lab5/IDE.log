@@ -1,0 +1,9 @@
+21:11:25 DEBUG : Logs will be stored at 'F:/Education/FPGA_Labs/Lab5/IDE.log'.
+21:11:28 INFO  : Launching XSCT server: xsct.bat -n  -interactive F:\Education\FPGA_Labs\Lab5\temp_xsdb_launch_script.tcl
+21:11:28 INFO  : Registering command handlers for Vitis TCF services
+21:11:28 INFO  : Platform repository initialization has completed.
+21:11:30 INFO  : XSCT server has started successfully.
+21:11:30 INFO  : Successfully done setting XSCT server connection channel  
+21:11:30 INFO  : plnx-install-location is set to ''
+21:11:30 INFO  : Successfully done setting workspace for the tool. 
+21:11:30 INFO  : Successfully done query RDI_DATADIR 
