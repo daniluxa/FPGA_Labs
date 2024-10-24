@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item key="sdx.custom.platform.repository.locations" value="F:\Education\FPGA_Labs\Lab8\Lab8_System_wrapper\export\Lab8_System_wrapper"/>
+	<item key="sdx.custom.platform.repository.locations" value="F:\Education\FPGA_Labs\Lab8\Lab8_BD_wrapper\export\Lab8_BD_wrapper;F:\Education\FPGA_Labs\Lab8\Lab8_Vitis"/>
 </section>

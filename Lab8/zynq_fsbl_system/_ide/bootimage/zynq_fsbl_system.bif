@@ -1,0 +1,11 @@
+/* C:/Users/Даниил/AppData/Local/Temp/bootgen_zynq_fsbl_system12940190353888783358/sd_card_temp/boot.bif */
+/* Command to create bitstream .bin file:       */
+/*   bootgen -image <bif_file> -split bin -w    */
+/* Command to create BOOT.BIN file:             */
+/*   bootgen  -image <bif_file> -w -o i BOOT.BIN */
+/*Lab8_BD_wrapper*/
+the_ROM_image:
+{
+ [bootloader] F:/Education/FPGA_Labs/Lab8/Lab8_BD_wrapper/export/Lab8_BD_wrapper/sw/Lab8_BD_wrapper/boot/fsbl.elf
+ F:/Education/FPGA_Labs/Lab8/zynq_fsbl/_ide/bitstream/Lab8_BD_wrapper.bit
+}

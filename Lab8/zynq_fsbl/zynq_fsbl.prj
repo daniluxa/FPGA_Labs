@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="zynq_fsbl" location="F:/Education/FPGA_Labs/Lab8/zynq_fsbl" platform="F:/Education/FPGA_Labs/Lab8/Lab8_BD_wrapper/export/Lab8_BD_wrapper/Lab8_BD_wrapper.xpfm" platformUID="xilinx:zedboard::0.0(custom)" systemProject="zynq_fsbl_system" sysConfig="Lab8_BD_wrapper" runtime="C/C++" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="5743f9fb323263a0320112f2e43df047">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1464594896">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.530682507" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="zynq_fsbl" hasBspSettings="true"/>
+</sdkproject:SdkProject>

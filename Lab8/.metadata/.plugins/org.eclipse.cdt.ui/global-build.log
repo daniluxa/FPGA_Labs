@@ -1,16 +1,41 @@
-Nothing to build in platform 'Lab8_System_wrapper'
+Nothing to build in platform 'Lab8_BD_wrapper'
 
-12:59:08 **** Incremental Build of configuration Debug for project lab8_fsbl ****
+21:51:11 **** Build of configuration Debug for project lab8_sd ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
-make[1]: Nothing to be done for 'main-build'.
-12:59:09 **** Build of configuration Debug for project lab8_fsbl_system ****
+'Building file: ../src/devcfg.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/devcfg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IF:/Education/FPGA_Labs/Lab8/Lab8_BD_wrapper/export/Lab8_BD_wrapper/sw/Lab8_BD_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/devcfg.d" -MT"src/devcfg.o" -o "src/devcfg.o" "../src/devcfg.c"
+'Finished building: ../src/devcfg.c'
+' '
+'Building file: ../src/lab8_sd.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab8_sd.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IF:/Education/FPGA_Labs/Lab8/Lab8_BD_wrapper/export/Lab8_BD_wrapper/sw/Lab8_BD_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/lab8_sd.d" -MT"src/lab8_sd.o" -o "src/lab8_sd.o" "../src/lab8_sd.c"
+'Finished building: ../src/lab8_sd.c'
+' '
+'Building file: ../src/load_elf.s'
+'Invoking: ARM v7 gcc assembler'
+arm-none-eabi-gcc -c  -o"src/load_elf.o" "../src/load_elf.s"
+'Finished building: ../src/load_elf.s'
+' '
+'Building target: lab8_sd.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LF:/Education/FPGA_Labs/Lab8/Lab8_BD_wrapper/export/Lab8_BD_wrapper/sw/Lab8_BD_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "lab8_sd.elf"  ./src/devcfg.o ./src/lab8_sd.o ./src/load_elf.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab8_sd.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab8_sd.elf  |tee "lab8_sd.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68976	   2256	  26000	  97232	  17bd0	lab8_sd.elf
+'Finished building: lab8_sd.elf.size'
+' '
+21:51:12 **** Build of configuration Debug for project lab8_sd_system ****
 make all 
 Generating bif file for the system project
-generate_system_bif.bat 63151 F:/Education/FPGA_Labs/Lab8/Lab8_System_wrapper/export/Lab8_System_wrapper/Lab8_System_wrapper.xpfm standalone_ps7_cortexa9_0 F:/Education/FPGA_Labs/Lab8/lab8_fsbl_system/Debug/system.bif
-sdcard_gen --xpfm F:/Education/FPGA_Labs/Lab8/Lab8_System_wrapper/export/Lab8_System_wrapper/Lab8_System_wrapper.xpfm --sys_config Lab8_System_wrapper --bif F:/Education/FPGA_Labs/Lab8/lab8_fsbl_system/Debug/system.bif --bitstream F:/Education/FPGA_Labs/Lab8/lab8_fsbl/_ide/bitstream/Lab8_System_wrapper.bit --elf F:/Education/FPGA_Labs/Lab8/lab8_fsbl/Debug/lab8_fsbl.elf,ps7_cortexa9_0
-creating BOOT.BIN using F:/Education/FPGA_Labs/Lab8/lab8_fsbl/_ide/bitstream/Lab8_System_wrapper.bit
-Running F:/Xilinx/Vitis/Vitis/2023.1/bin/bootgen  -image F:/Education/FPGA_Labs/Lab8/lab8_fsbl_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+generate_system_bif.bat 61002 F:/Education/FPGA_Labs/Lab8/Lab8_BD_wrapper/export/Lab8_BD_wrapper/Lab8_BD_wrapper.xpfm standalone_ps7_cortexa9_0 F:/Education/FPGA_Labs/Lab8/lab8_sd_system/Debug/system.bif
+sdcard_gen --xpfm F:/Education/FPGA_Labs/Lab8/Lab8_BD_wrapper/export/Lab8_BD_wrapper/Lab8_BD_wrapper.xpfm --sys_config Lab8_BD_wrapper --bif F:/Education/FPGA_Labs/Lab8/lab8_sd_system/Debug/system.bif --bitstream F:/Education/FPGA_Labs/Lab8/lab8_sd/_ide/bitstream/Lab8_BD_wrapper.bit --elf F:/Education/FPGA_Labs/Lab8/lab8_sd/Debug/lab8_sd.elf,ps7_cortexa9_0
+creating BOOT.BIN using F:/Education/FPGA_Labs/Lab8/lab8_sd/_ide/bitstream/Lab8_BD_wrapper.bit
+Running F:/Xilinx/Vitis/Vitis/2023.1/bin/bootgen  -image F:/Education/FPGA_Labs/Lab8/lab8_sd_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"Lab8_BD": {
+			"proto_instances": {
+			}
+		}
+	}
+}

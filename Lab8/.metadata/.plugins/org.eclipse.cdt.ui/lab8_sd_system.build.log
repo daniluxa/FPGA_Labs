@@ -1,0 +1,10 @@
+21:51:12 **** Build of configuration Debug for project lab8_sd_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 61002 F:/Education/FPGA_Labs/Lab8/Lab8_BD_wrapper/export/Lab8_BD_wrapper/Lab8_BD_wrapper.xpfm standalone_ps7_cortexa9_0 F:/Education/FPGA_Labs/Lab8/lab8_sd_system/Debug/system.bif
+sdcard_gen --xpfm F:/Education/FPGA_Labs/Lab8/Lab8_BD_wrapper/export/Lab8_BD_wrapper/Lab8_BD_wrapper.xpfm --sys_config Lab8_BD_wrapper --bif F:/Education/FPGA_Labs/Lab8/lab8_sd_system/Debug/system.bif --bitstream F:/Education/FPGA_Labs/Lab8/lab8_sd/_ide/bitstream/Lab8_BD_wrapper.bit --elf F:/Education/FPGA_Labs/Lab8/lab8_sd/Debug/lab8_sd.elf,ps7_cortexa9_0
+creating BOOT.BIN using F:/Education/FPGA_Labs/Lab8/lab8_sd/_ide/bitstream/Lab8_BD_wrapper.bit
+Running F:/Xilinx/Vitis/Vitis/2023.1/bin/bootgen  -image F:/Education/FPGA_Labs/Lab8/lab8_sd_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+21:51:17 Build Finished (took 4s.120ms)
+

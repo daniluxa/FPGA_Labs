@@ -1,0 +1,9 @@
+TRACE::2024-10-24.20:29:58::SCWBifWriter::Found the complete platform F:/Education/FPGA_Labs/Lab8/Lab8_BD_wrapper/export/Lab8_BD_wrapper/Lab8_BD_wrapper.xpfm
+TRACE::2024-10-24.20:29:58::SCWBifWriter::hardware databse : Lab8_BD_wrapper_1
+TRACE::2024-10-24.20:29:58::SCWBifWriter::bitstream found in the design
+TRACE::2024-10-24.20:29:58::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2024-10-24.20:29:58::SCWBifWriter::proc type : 
+TRACE::2024-10-24.20:29:58::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2024-10-24.20:29:58::SCWBifWriter::Device type is : zynq
+TRACE::2024-10-24.20:29:58::SCWBifWriter::Writing BIF to file : F:/Education/FPGA_Labs/Lab8/zynq_fsbl_system/_ide/bootimage/template_zynq_fsbl_system.bif
+TRACE::2024-10-24.20:29:58::SCWBifWriter::Writing the Zynq Baremetal bif 

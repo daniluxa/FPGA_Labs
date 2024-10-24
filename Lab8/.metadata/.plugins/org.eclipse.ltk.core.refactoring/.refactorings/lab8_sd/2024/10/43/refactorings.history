@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;devcfg.c, devcfg.h, lab8_sd.c, load_elf.s&apos; to &apos;src&apos;" description="Move 4 resources to &apos;src&apos;" destination="src" element1="devcfg.c" element2="devcfg.h" element3="lab8_sd.c" element4="load_elf.s" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="4" stamp="1729795676520" updateReferences="true"/>
+</session>

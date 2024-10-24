@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="zynq_fsbl_system-imgFile" value="F:\Education\FPGA_Labs\Lab8\image\BOOT.bin"/>
+	<item key="zynq_fsbl_system-offSet" value="0"/>
+	<item key="zynq_fsbl_system-initFile" value="F:\Education\FPGA_Labs\Lab8\zynq_fsbl\Debug\zynq_fsbl.elf"/>
+	<item key="zynq_fsbl_system-flashType" value="qspi-x4-single"/>
+	<item key="zynq_fsbl_system-verifyFlash" value="false"/>
+	<item key="zynq_fsbl_system-blankCheck" value="false"/>
+	<item key="zynq_fsbl_system-device" value="Auto Detect"/>
+	<item key="zynq_fsbl_system-target" value="Local"/>
+	<item key="programflash.hwplatform" value="Lab8_Vitis_system"/>
+	<item key="Lab8_Vitis_system-imgFile" value="F:/Education/FPGA_Labs/Lab8/Lab8_Vitis_system/Debug/sd_card/BOOT.BIN"/>
+	<item key="Lab8_Vitis_system-offSet" value=""/>
+	<item key="Lab8_Vitis_system-initFile" value="F:\Education\FPGA_Labs\Lab8\zynq_fsbl\Debug\zynq_fsbl.elf"/>
+	<item key="Lab8_Vitis_system-flashType" value="qspi-x4-single"/>
+	<item key="Lab8_Vitis_system-verifyFlash" value="false"/>
+	<item key="Lab8_Vitis_system-blankCheck" value="false"/>
+	<item key="Lab8_Vitis_system-device" value="Auto Detect"/>
+	<item key="Lab8_Vitis_system-target" value="Local"/>
+</section>
