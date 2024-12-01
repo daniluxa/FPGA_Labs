@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sun Dec  1 16:05:56 2024
+# Process ID: 18176
+# Current directory: F:/Education/FPGA_Labs/Labs_2/lab4
+# Command line: vivado.exe -source pynq_zu_audio_project_create.tcl
+# Log file: F:/Education/FPGA_Labs/Labs_2/lab4/vivado.log
+# Journal file: F:/Education/FPGA_Labs/Labs_2/lab4\vivado.jou
+# Running On: DESKTOP-2ENERJB, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 6, Host memory: 34191 MB
+#-----------------------------------------------------------
+start_gui
+source pynq_zu_audio_project_create.tcl
+create_project system F:/Education/FPGA_Labs/Labs_2/lab4/system -part xc7z020clg484-1
+set_property board_part digilentinc.com:zedboard:part0:1.1 [current_project]
+create_bd_design "design_1"
+update_compile_order -fileset sources_1
+set_property  ip_repo_paths  F:/Education/FPGA_Labs/Labs_2/lab4/ip_repo [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {f:/Education/FPGA_Labs/Labs_2/lab4/ip_repo F:/Education/FPGA_Labs/Labs_2/lab4/fir/solution1/impl/ip} [current_project]
+update_ip_catalog
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+set_property -dict [list \
+  CONFIG.PCW_EN_CLK1_PORT {1} \
+  CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {100} \
+  CONFIG.PCW_FPGA1_PERIPHERAL_FREQMHZ {10} \
+] [get_bd_cells processing_system7_0]
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+set_property -dict [list \
+  CONFIG.C_GPIO2_WIDTH {1} \
+  CONFIG.C_GPIO_WIDTH {2} \
+  CONFIG.C_IS_DUAL {1} \
+] [get_bd_cells axi_gpio_0]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {btns_5bits ( Push buttons ) } Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_0/GPIO]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {btns_5bits ( Push buttons ) } Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_0/GPIO2]
+endgroup
+regenerate_bd_layout
+startgroup
+set_property CONFIG.GPIO_BOARD_INTERFACE {Custom} [get_bd_cells axi_gpio_0]
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {btns_5bits ( Push buttons ) } Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_0/GPIO2]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_gpio_0/S_AXI} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_gpio_0/S_AXI]
+endgroup
+regenerate_bd_layout
+update_ip_catalog -rebuild
+save_bd_design
