@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="matrixmul.cpp" path="F:\Education\FPGA_Labs\Labs_2\xup_high_level_synthesis_design_flow-main\source\lab1\matrixmul.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="matrixmul_test.cpp" path="F:\Education\FPGA_Labs\Labs_2\xup_high_level_synthesis_design_flow-main\source\lab1\matrixmul_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

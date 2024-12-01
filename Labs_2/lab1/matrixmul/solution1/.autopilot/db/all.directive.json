@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "matrixmul",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "matrixmul"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "F:/Education/FPGA_Labs/Labs_2/lab1/matrixmul/solution1/csynth.tcl",
+    "sourceLine": 16,
+    "success": true
+  }
+]
