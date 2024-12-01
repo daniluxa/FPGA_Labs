@@ -1,0 +1,6 @@
+<pragmas>
+<pragma file="../xup_high_level_synthesis_design_flow-main/source/lab4/fir.cpp" line="8" pragmaType="interface" parentfunction="fir" mode="s_axilite" port="" bundle="fir_io" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="../xup_high_level_synthesis_design_flow-main/source/lab4/fir.cpp" line="7" pragmaType="interface" parentfunction="fir" mode="s_axilite" port="" bundle="fir_io" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="../xup_high_level_synthesis_design_flow-main/source/lab4/fir.cpp" line="8" pragmaType="interface" parentfunction="fir" mode="s_axilite" port="y" bundle="fir_io" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="../xup_high_level_synthesis_design_flow-main/source/lab4/fir.cpp" line="9" pragmaType="interface" parentfunction="fir" mode="s_axilite" port="x" bundle="fir_io" offset="-1" name="" clock="" impl="" register="0"/>
+</pragmas>

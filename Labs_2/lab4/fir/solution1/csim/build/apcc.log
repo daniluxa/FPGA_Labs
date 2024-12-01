@@ -1,0 +1,13 @@
+INFO: [HLS 200-10] Running 'F:/Xilinx/Vitis/Vitis_HLS/2023.1/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'Даниил' on host 'desktop-2enerjb' (Windows NT_amd64 version 6.2) on Sun Dec 01 15:17:34 +0300 2024
+INFO: [HLS 200-10] In directory 'F:/Education/FPGA_Labs/Labs_2/lab4/fir/solution1/csim/build'
+In file included from ../../../../../xup_high_level_synthesis_design_flow-main/source/lab4/fir.c:29:
+../../../../../xup_high_level_synthesis_design_flow-main/source/lab4/fir.h:30:10: fatal error: 'ap_cint.h' file not found
+#include <ap_cint.h>
+         ^
+1 error generated.
+ERROR: [APCC 202-10] clang compile failed: child process exited abnormally
+ERROR: [APCC 202-1] ProcessSources failed
+INFO: [APCC 202-3] Tmp directory is apcc_db
+ERROR: [APCC 202-1] APCC failed.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 0 seconds. Total elapsed time: 0.484 seconds; peak allocated memory: 7.531 MB.

@@ -1,0 +1,23 @@
+<dict>
+  <key>main-file</key>
+  <string>../xup_high_level_synthesis_design_flow-main/source/lab4/fir.cpp</string>
+  <key>diagnostics</key>
+  <array>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/autopilot\legacy/ap_cint.h</string>
+      <key>line</key>
+      <integer>14</integer>
+      <key>column</key>
+      <integer>2</integer>
+      <key>message</key>
+      <string>This header file cannot be used in a C++ design. C-synthesis will fail. </string>
+      <key>ID</key>
+      <integer>943</integer>
+      <key>WarningOption</key>
+      <string>#warnings</string>
+    </dict>
+  </array>
+</dict>

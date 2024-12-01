@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="fir" solutionName="solution1" date="2024-12-01T15:28:00.030+0300" type="Warning"/>
+        <logs message="WARNING: [HLS 200-2049] Adding the rewind optimization to the pipelined process 'loop' with inout ports inside a dataflow region can result in the creation of loop-carried dependencies and errors. Use caution when adding the rewind optimization to such loops." projectName="fir" solutionName="solution1" date="2024-12-01T15:27:59.876+0300" type="Warning"/>
+        <logs message="WARNING: [HLS 207-943] This header file cannot be used in a C++ design. C-synthesis will fail.  (F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/autopilot\legacy/ap_cint.h:14:2)" projectName="fir" solutionName="solution1" date="2024-12-01T15:27:57.227+0300" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Skipped source file 'fir_coef.dat'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx." projectName="fir" solutionName="solution1" date="2024-12-01T15:27:56.279+0300" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

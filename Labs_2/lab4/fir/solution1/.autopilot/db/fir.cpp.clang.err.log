@@ -1,0 +1,6 @@
+In file included from ../xup_high_level_synthesis_design_flow-main/source/lab4/fir.cpp:1:
+In file included from ../xup_high_level_synthesis_design_flow-main/source/lab4/fir.h:30:
+F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/autopilot\legacy/ap_cint.h:14:2: warning: This header file cannot be used in a C++ design. C-synthesis will fail.  [-W#warnings]
+#warning This header file cannot be used in a C++ design. C-synthesis will fail. 
+ ^
+1 warning generated.

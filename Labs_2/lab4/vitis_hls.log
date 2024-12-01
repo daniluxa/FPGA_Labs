@@ -1,0 +1,48 @@
+NOTE: Using modified tcl85t.dll from https://gitenterprise.xilinx.com/ACT/vitis_hls_tcl
+INFO: [HLS 200-10] Running 'F:/Xilinx/Vitis/Vitis_HLS/2023.1/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'Даниил' on host 'desktop-2enerjb' (Windows NT_amd64 version 6.2) on Sun Dec 01 15:28:21 +0300 2024
+INFO: [HLS 200-10] In directory 'F:/Education/FPGA_Labs/Labs_2/lab4'
+Sourcing Tcl script 'F:/Education/FPGA_Labs/Labs_2/lab4/fir/solution1/export.tcl'
+INFO: [HLS 200-1510] Running: source F:/Education/FPGA_Labs/Labs_2/lab4/fir/solution1/export.tcl
+INFO: [HLS 200-1510] Running: open_project fir 
+INFO: [HLS 200-10] Opening project 'F:/Education/FPGA_Labs/Labs_2/lab4/fir'.
+INFO: [HLS 200-1510] Running: set_top fir 
+INFO: [HLS 200-1510] Running: add_files ../xup_high_level_synthesis_design_flow-main/source/lab4/fir.cpp 
+INFO: [HLS 200-10] Adding design file '../xup_high_level_synthesis_design_flow-main/source/lab4/fir.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files ../xup_high_level_synthesis_design_flow-main/source/lab4/fir_coef.dat 
+INFO: [HLS 200-10] Adding design file '../xup_high_level_synthesis_design_flow-main/source/lab4/fir_coef.dat' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ../xup_high_level_synthesis_design_flow-main/source/lab4/fir_test.cpp 
+INFO: [HLS 200-10] Adding test bench file '../xup_high_level_synthesis_design_flow-main/source/lab4/fir_test.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'F:/Education/FPGA_Labs/Labs_2/lab4/fir/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: source ./fir/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name fir fir 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode s_axilite -bundle fir_io fir 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+ipx::create_core: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 915.352 ; gain = 159.504
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vitis/Vivado/2023.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  1 15:28:53 2024...
+INFO: [HLS 200-802] Generated output file fir/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 30.865 seconds; current allocated memory: 7.426 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 33.138 seconds; peak allocated memory: 543.145 MB.
