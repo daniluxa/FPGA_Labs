@@ -1,0 +1,177 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "dct",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "dct"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "F:/Education/FPGA_Labs/Labs_2/lab3/lab3/solution5/directives.tcl",
+    "sourceLine": 7,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "dct_2d",
+    "id": 1,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "Xpose_Row_Inner_Loop",
+    "pragma": {
+      "name": "PIPELINE"
+    },
+    "slx": false,
+    "sourceFile": "F:/Education/FPGA_Labs/Labs_2/lab3/lab3/solution5/directives.tcl",
+    "sourceLine": 8,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "dct_2d",
+    "id": 2,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "Xpose_Col_Inner_Loop",
+    "pragma": {
+      "name": "PIPELINE"
+    },
+    "slx": false,
+    "sourceFile": "F:/Education/FPGA_Labs/Labs_2/lab3/lab3/solution5/directives.tcl",
+    "sourceLine": 9,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "read_data",
+    "id": 3,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "RD_Loop_Col",
+    "pragma": {
+      "name": "PIPELINE"
+    },
+    "slx": false,
+    "sourceFile": "F:/Education/FPGA_Labs/Labs_2/lab3/lab3/solution5/directives.tcl",
+    "sourceLine": 10,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "write_data",
+    "id": 4,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "WR_Loop_Col",
+    "pragma": {
+      "name": "PIPELINE"
+    },
+    "slx": false,
+    "sourceFile": "F:/Education/FPGA_Labs/Labs_2/lab3/lab3/solution5/directives.tcl",
+    "sourceLine": 11,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "dct_1d",
+    "id": 5,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "DCT_Outer_Loop",
+    "pragma": {
+      "name": "PIPELINE"
+    },
+    "slx": false,
+    "sourceFile": "F:/Education/FPGA_Labs/Labs_2/lab3/lab3/solution5/directives.tcl",
+    "sourceLine": 12,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "dct",
+    "id": 6,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "ARRAY_PARTITION",
+      "option": [
+        {
+          "name": "complete",
+          "value": ""
+        },
+        {
+          "name": "dim",
+          "value": "2"
+        },
+        {
+          "name": "variable",
+          "value": "buf_2d_in"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "F:/Education/FPGA_Labs/Labs_2/lab3/lab3/solution5/directives.tcl",
+    "sourceLine": 13,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "dct_2d",
+    "id": 7,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "ARRAY_PARTITION",
+      "option": [
+        {
+          "name": "complete",
+          "value": ""
+        },
+        {
+          "name": "dim",
+          "value": "2"
+        },
+        {
+          "name": "variable",
+          "value": "col_inbuf"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "F:/Education/FPGA_Labs/Labs_2/lab3/lab3/solution5/directives.tcl",
+    "sourceLine": 14,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "dct",
+    "id": 8,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "dct"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "F:/Education/FPGA_Labs/Labs_2/lab3/lab3/solution5/csynth.tcl",
+    "sourceLine": 18,
+    "success": true
+  }
+]

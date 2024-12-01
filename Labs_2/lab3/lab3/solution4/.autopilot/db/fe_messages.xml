@@ -1,0 +1,45 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Education/FPGA_Labs/Labs_2/lab3/lab3/solution4/directives.tcl:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="dct_1d" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Education/FPGA_Labs/Labs_2/lab3/lab3/solution4/directives.tcl:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="dct_2d" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Education/FPGA_Labs/Labs_2/lab3/lab3/solution4/directives.tcl:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="dct_2d" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Education/FPGA_Labs/Labs_2/lab3/lab3/solution4/directives.tcl:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="read_data" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Education/FPGA_Labs/Labs_2/lab3/lab3/solution4/directives.tcl:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="write_data" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Education/FPGA_Labs/Labs_2/lab3/lab3/solution4/csynth.tcl:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="dct" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=dct" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Education/FPGA_Labs/Labs_2/lab3/lab3/solution4/directives.tcl:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="dct" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=dct" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:41:7" msg_body="Loop 'DCT_Inner_Loop' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="DCT_Inner_Loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:31:0" msg_body="Unrolling loop 'DCT_Inner_Loop' (../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:41:7) in function 'dct_1d' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:41:7" LoopName="DCT_Inner_Loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:105:0" msg_body="Inlining function 'read_data' into 'dct'">
+        <args Callee="read_data" Callee-DebugLoc="File ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c Line 81 Column 0" Caller="dct" Caller-DebugLoc="File ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c Line 105 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:105:0" msg_body="Inlining function 'dct_2d' into 'dct'">
+        <args Callee="dct_2d" Callee-DebugLoc="File ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c Line 51 Column 0" Caller="dct" Caller-DebugLoc="File ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c Line 105 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:105:0" msg_body="Inlining function 'write_data' into 'dct'">
+        <args Callee="write_data" Callee-DebugLoc="File ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c Line 93 Column 0" Caller="dct" Caller-DebugLoc="File ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c Line 105 Column 0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="F:/Education/FPGA_Labs/Labs_2/lab3/lab3/solution4/directives.tcl:12:9" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'dct_1d.dct_coeff_table' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="dct_1d.dct_coeff_table" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:34:0" msg_body="Applying array_partition to 'dct_1d.dct_coeff_table': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="dct_1d.dct_coeff_table"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

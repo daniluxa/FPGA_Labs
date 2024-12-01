@@ -1,0 +1,22 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling(apcc) ../../../../../xup_high_level_synthesis_design_flow-main/source/lab3/dct_test.c in debug mode
+INFO: [HLS 200-10] Running 'F:/Xilinx/Vitis/Vitis_HLS/2023.1/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'Даниил' on host 'desktop-2enerjb' (Windows NT_amd64 version 6.2) on Sun Dec 01 13:59:27 +0300 2024
+INFO: [HLS 200-10] In directory 'F:/Education/FPGA_Labs/Labs_2/lab3/lab3/solution3/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 0 seconds. Total elapsed time: 0.802 seconds; peak allocated memory: 7.219 MB.
+   Compiling(apcc) ../../../../../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c in debug mode
+INFO: [HLS 200-10] Running 'F:/Xilinx/Vitis/Vitis_HLS/2023.1/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'Даниил' on host 'desktop-2enerjb' (Windows NT_amd64 version 6.2) on Sun Dec 01 13:59:29 +0300 2024
+INFO: [HLS 200-10] In directory 'F:/Education/FPGA_Labs/Labs_2/lab3/lab3/solution3/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 0.894 seconds; peak allocated memory: 7.562 MB.
+   Generating csim.exe
+    *** *** *** *** 
+    Results are good 
+    *** *** *** *** 
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

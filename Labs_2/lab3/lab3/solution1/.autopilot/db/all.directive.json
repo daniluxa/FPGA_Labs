@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "dct",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "dct"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "F:/Education/FPGA_Labs/Labs_2/lab3/lab3/solution1/csynth.tcl",
+    "sourceLine": 17,
+    "success": true
+  }
+]

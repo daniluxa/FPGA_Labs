@@ -1,0 +1,68 @@
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c, 
+                   Line: 51, Column: 0 }
+Function:        dct_2d
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          dct_1d
+    DebugLoc:        { File: ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c, 
+                       Line: 31, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          dct_2d
+    DebugLoc:        { File: ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c, 
+                       Line: 51, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c, 
+                   Line: 105, Column: 0 }
+Function:        dct
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          read_data
+    DebugLoc:        { File: ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c, 
+                       Line: 81, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          dct
+    DebugLoc:        { File: ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c, 
+                       Line: 105, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c, 
+                   Line: 105, Column: 0 }
+Function:        dct
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          dct_2d
+    DebugLoc:        { File: ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c, 
+                       Line: 51, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          dct
+    DebugLoc:        { File: ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c, 
+                       Line: 105, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c, 
+                   Line: 105, Column: 0 }
+Function:        dct
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          write_data
+    DebugLoc:        { File: ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c, 
+                       Line: 93, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          dct
+    DebugLoc:        { File: ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c, 
+                       Line: 105, Column: 0 }
+  - String:          ''''
+...

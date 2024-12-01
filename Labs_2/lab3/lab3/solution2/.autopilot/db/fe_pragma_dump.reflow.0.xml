@@ -1,0 +1,14 @@
+<pragmas>
+<pragma file="../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c" line="19" pragmaType="pipeline" parentfunction="dct_1d" off="1" ii="0" rewind="0" style=""/>
+<pragma file="../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c" line="8" pragmaType="pipeline" parentfunction="dct_1d" off="1" ii="0" rewind="0" style=""/>
+<pragma file="../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c" line="15" pragmaType="pipeline" parentfunction="read_data" off="1" ii="0" rewind="0" style=""/>
+<pragma file="../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c" line="16" pragmaType="pipeline" parentfunction="read_data" off="1" ii="0" rewind="0" style=""/>
+<pragma file="../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c" line="13" pragmaType="pipeline" parentfunction="dct_2d" off="1" ii="0" rewind="0" style=""/>
+<pragma file="../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c" line="14" pragmaType="pipeline" parentfunction="dct_2d" off="1" ii="0" rewind="0" style=""/>
+<pragma file="../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c" line="12" pragmaType="pipeline" parentfunction="dct_2d" off="1" ii="0" rewind="0" style=""/>
+<pragma file="../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c" line="10" pragmaType="pipeline" parentfunction="dct_2d" off="1" ii="0" rewind="0" style=""/>
+<pragma file="../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c" line="11" pragmaType="pipeline" parentfunction="dct_2d" off="1" ii="0" rewind="0" style=""/>
+<pragma file="../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c" line="9" pragmaType="pipeline" parentfunction="dct_2d" off="1" ii="0" rewind="0" style=""/>
+<pragma file="../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c" line="17" pragmaType="pipeline" parentfunction="write_data" off="1" ii="0" rewind="0" style=""/>
+<pragma file="../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c" line="18" pragmaType="pipeline" parentfunction="write_data" off="1" ii="0" rewind="0" style=""/>
+</pragmas>

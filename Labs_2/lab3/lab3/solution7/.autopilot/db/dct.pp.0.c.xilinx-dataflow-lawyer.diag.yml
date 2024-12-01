@@ -1,0 +1,8 @@
+---
+MainSourceFile:  'F:/Education/FPGA_Labs/Labs_2/lab3/lab3/solution7/.autopilot/db/dct.pp.0.c'
+Diagnostics:     
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-11] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region'
+    FileOffset:      '15:9'
+    FilePath:        'F:/Education/FPGA_Labs/Labs_2/lab3/lab3/solution7/directives.tcl'
+...

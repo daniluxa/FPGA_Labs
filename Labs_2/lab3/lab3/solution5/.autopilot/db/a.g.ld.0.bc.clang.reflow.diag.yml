@@ -1,0 +1,177 @@
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c, 
+                   Line: 41, Column: 7 }
+Function:        dct_1d
+Args:            
+  - String:          'Loop '''
+  - LoopName:        DCT_Inner_Loop
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c, 
+                   Line: 31, Column: 0 }
+Function:        dct_1d
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        DCT_Inner_Loop
+  - String:          ''' ('
+  - LoopLoc:         '../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:41:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dct_1d
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c, 
+                   Line: 105, Column: 0 }
+Function:        dct
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          read_data
+    DebugLoc:        { File: ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c, 
+                       Line: 81, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          dct
+    DebugLoc:        { File: ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c, 
+                       Line: 105, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c, 
+                   Line: 105, Column: 0 }
+Function:        dct
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          dct_2d
+    DebugLoc:        { File: ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c, 
+                       Line: 51, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          dct
+    DebugLoc:        { File: ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c, 
+                       Line: 105, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c, 
+                   Line: 105, Column: 0 }
+Function:        dct
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          write_data
+    DebugLoc:        { File: ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c, 
+                       Line: 93, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          dct
+    DebugLoc:        { File: ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c, 
+                       Line: 105, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c, 
+                   Line: 53, Column: 33 }
+Function:        dct
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          col_inbuf.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c, 
+                   Line: 107, Column: 10 }
+Function:        dct
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          buf_2d_in
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+Function:        dct
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=2 type=complete  variable=dct_1d.dct_coeff_table'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  dct
+  - String:          ' '
+  - varLoc:          '../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:34:0'
+  - String:          ' '
+  - PragmaSrcLoc:    'F:/Education/FPGA_Labs/Labs_2/lab3/lab3/solution5/directives.tcl:12:9'
+    DebugLoc:        { File: 'F:/Education/FPGA_Labs/Labs_2/lab3/lab3/solution5/directives.tcl', 
+                       Line: 12, Column: 9 }
+  - VarName:         dct_1d.dct_coeff_table
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: 'F:/Education/FPGA_Labs/Labs_2/lab3/lab3/solution5/directives.tcl', 
+                   Line: 12, Column: 9 }
+Function:        dct
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '2'
+  - String:          ''' for array '''
+  - Name:            dct_1d.dct_coeff_table
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c, 
+                   Line: 34, Column: 0 }
+Function:        dct
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          dct_1d.dct_coeff_table
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...

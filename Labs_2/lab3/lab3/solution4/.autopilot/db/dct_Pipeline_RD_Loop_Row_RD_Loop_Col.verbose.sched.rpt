@@ -1,0 +1,168 @@
+
+
+================================================================
+== Vitis HLS Report for 'dct_Pipeline_RD_Loop_Row_RD_Loop_Col'
+================================================================
+* Date:           Sun Dec  1 14:08:48 2024
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        lab3
+* Solution:       solution4 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.508 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       66|       66|  0.660 us|  0.660 us|   66|   66|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                           |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |         Loop Name         |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- RD_Loop_Row_RD_Loop_Col  |       64|       64|         2|          1|          1|    64|       yes|
+        +---------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 6.08>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%c = alloca i32 1"   --->   Operation 5 'alloca' 'c' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%r = alloca i32 1"   --->   Operation 6 'alloca' 'r' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%indvar_flatten = alloca i32 1"   --->   Operation 7 'alloca' 'indvar_flatten' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %input_r, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (1.58ns)   --->   "%store_ln0 = store i7 0, i7 %indvar_flatten"   --->   Operation 9 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 10 [1/1] (1.58ns)   --->   "%store_ln0 = store i4 0, i4 %r"   --->   Operation 10 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 11 [1/1] (1.58ns)   --->   "%store_ln0 = store i4 0, i4 %c"   --->   Operation 11 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc.i"   --->   Operation 12 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%indvar_flatten_load = load i7 %indvar_flatten" [../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:85->../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:111]   --->   Operation 13 'load' 'indvar_flatten_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (1.87ns)   --->   "%icmp_ln85 = icmp_eq  i7 %indvar_flatten_load, i7 64" [../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:85->../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:111]   --->   Operation 14 'icmp' 'icmp_ln85' <Predicate = true> <Delay = 1.87> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 15 [1/1] (1.87ns)   --->   "%add_ln85_1 = add i7 %indvar_flatten_load, i7 1" [../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:85->../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:111]   --->   Operation 15 'add' 'add_ln85_1' <Predicate = true> <Delay = 1.87> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%br_ln85 = br i1 %icmp_ln85, void %for.inc8.i, void %for.inc.i4.preheader.exitStub" [../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:85->../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:111]   --->   Operation 16 'br' 'br_ln85' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%c_load = load i4 %c" [../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:87->../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:111]   --->   Operation 17 'load' 'c_load' <Predicate = (!icmp_ln85)> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%r_load = load i4 %r" [../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:85->../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:111]   --->   Operation 18 'load' 'r_load' <Predicate = (!icmp_ln85)> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (1.73ns)   --->   "%add_ln85 = add i4 %r_load, i4 1" [../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:85->../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:111]   --->   Operation 19 'add' 'add_ln85' <Predicate = (!icmp_ln85)> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 20 [1/1] (1.73ns)   --->   "%icmp_ln87 = icmp_eq  i4 %c_load, i4 8" [../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:87->../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:111]   --->   Operation 20 'icmp' 'icmp_ln87' <Predicate = (!icmp_ln85)> <Delay = 1.73> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 21 [1/1] (1.02ns)   --->   "%select_ln85 = select i1 %icmp_ln87, i4 0, i4 %c_load" [../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:85->../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:111]   --->   Operation 21 'select' 'select_ln85' <Predicate = (!icmp_ln85)> <Delay = 1.02> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.02> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 22 [1/1] (1.02ns)   --->   "%select_ln85_1 = select i1 %icmp_ln87, i4 %add_ln85, i4 %r_load" [../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:85->../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:111]   --->   Operation 22 'select' 'select_ln85_1' <Predicate = (!icmp_ln85)> <Delay = 1.02> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.02> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%trunc_ln88 = trunc i4 %select_ln85_1" [../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:88->../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:111]   --->   Operation 23 'trunc' 'trunc_ln88' <Predicate = (!icmp_ln85)> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i6 @_ssdm_op_BitConcatenate.i6.i3.i3, i3 %trunc_ln88, i3 0" [../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:88->../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:111]   --->   Operation 24 'bitconcatenate' 'tmp' <Predicate = (!icmp_ln85)> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%zext_ln88_1 = zext i4 %select_ln85" [../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:88->../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:111]   --->   Operation 25 'zext' 'zext_ln88_1' <Predicate = (!icmp_ln85)> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (1.82ns)   --->   "%add_ln88 = add i6 %tmp, i6 %zext_ln88_1" [../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:88->../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:111]   --->   Operation 26 'add' 'add_ln88' <Predicate = (!icmp_ln85)> <Delay = 1.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%trunc_ln88_1 = trunc i4 %select_ln85" [../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:88->../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:111]   --->   Operation 27 'trunc' 'trunc_ln88_1' <Predicate = (!icmp_ln85)> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%add_ln = bitconcatenate i6 @_ssdm_op_BitConcatenate.i6.i3.i3, i3 %trunc_ln88, i3 %trunc_ln88_1" [../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:88->../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:111]   --->   Operation 28 'bitconcatenate' 'add_ln' <Predicate = (!icmp_ln85)> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%zext_ln88 = zext i6 %add_ln" [../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:88->../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:111]   --->   Operation 29 'zext' 'zext_ln88' <Predicate = (!icmp_ln85)> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%input_r_addr = getelementptr i16 %input_r, i64 0, i64 %zext_ln88" [../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:88->../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:111]   --->   Operation 30 'getelementptr' 'input_r_addr' <Predicate = (!icmp_ln85)> <Delay = 0.00>
+ST_1 : Operation 31 [2/2] (3.25ns)   --->   "%input_r_load = load i6 %input_r_addr" [../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:88->../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:111]   --->   Operation 31 'load' 'input_r_load' <Predicate = (!icmp_ln85)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 64> <RAM>
+ST_1 : Operation 32 [1/1] (1.73ns)   --->   "%add_ln87 = add i4 %select_ln85, i4 1" [../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:87->../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:111]   --->   Operation 32 'add' 'add_ln87' <Predicate = (!icmp_ln85)> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 33 [1/1] (1.58ns)   --->   "%store_ln87 = store i7 %add_ln85_1, i7 %indvar_flatten" [../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:87->../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:111]   --->   Operation 33 'store' 'store_ln87' <Predicate = (!icmp_ln85)> <Delay = 1.58>
+ST_1 : Operation 34 [1/1] (1.58ns)   --->   "%store_ln87 = store i4 %select_ln85_1, i4 %r" [../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:87->../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:111]   --->   Operation 34 'store' 'store_ln87' <Predicate = (!icmp_ln85)> <Delay = 1.58>
+ST_1 : Operation 35 [1/1] (1.58ns)   --->   "%store_ln87 = store i4 %add_ln87, i4 %c" [../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:87->../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:111]   --->   Operation 35 'store' 'store_ln87' <Predicate = (!icmp_ln85)> <Delay = 1.58>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 45 'ret' 'ret_ln0' <Predicate = (icmp_ln85)> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 6.50>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @RD_Loop_Row_RD_Loop_Col_str"   --->   Operation 36 'specloopname' 'specloopname_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 37 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 64, i64 64, i64 64"   --->   Operation 37 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 38 [1/1] (0.00ns)   --->   "%zext_ln88_2 = zext i6 %add_ln88" [../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:88->../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:111]   --->   Operation 38 'zext' 'zext_ln88_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%buf_2d_in_addr = getelementptr i16 %buf_2d_in, i64 0, i64 %zext_ln88_2" [../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:88->../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:111]   --->   Operation 39 'getelementptr' 'buf_2d_in_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 40 [1/1] (0.00ns)   --->   "%specpipeline_ln10 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_0" [F:/Education/FPGA_Labs/Labs_2/lab3/lab3/solution4/directives.tcl:10->../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:111]   --->   Operation 40 'specpipeline' 'specpipeline_ln10' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%specloopname_ln87 = specloopname void @_ssdm_op_SpecLoopName, void @empty_7" [../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:87->../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:111]   --->   Operation 41 'specloopname' 'specloopname_ln87' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 42 [1/2] (3.25ns)   --->   "%input_r_load = load i6 %input_r_addr" [../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:88->../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:111]   --->   Operation 42 'load' 'input_r_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 64> <RAM>
+ST_2 : Operation 43 [1/1] (3.25ns)   --->   "%store_ln88 = store i16 %input_r_load, i6 %buf_2d_in_addr" [../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:88->../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:111]   --->   Operation 43 'store' 'store_ln88' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 64> <RAM>
+ST_2 : Operation 44 [1/1] (0.00ns)   --->   "%br_ln87 = br void %for.inc.i" [../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:87->../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:111]   --->   Operation 44 'br' 'br_ln87' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 6.082ns
+The critical path consists of the following:
+	'alloca' operation ('c') [3]  (0.000 ns)
+	'load' operation ('c_load', ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:87->../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:111) on local variable 'c' [17]  (0.000 ns)
+	'icmp' operation ('icmp_ln87', ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:87->../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:111) [22]  (1.735 ns)
+	'select' operation ('select_ln85', ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:85->../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:111) [23]  (1.024 ns)
+	'add' operation ('add_ln87', ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:87->../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:111) [39]  (1.735 ns)
+	'store' operation ('store_ln87', ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:87->../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:111) of variable 'add_ln87', ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:87->../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:111 on local variable 'c' [42]  (1.588 ns)
+
+ <State 2>: 6.508ns
+The critical path consists of the following:
+	'load' operation ('input_r_load', ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:88->../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:111) on array 'input_r' [37]  (3.254 ns)
+	'store' operation ('store_ln88', ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:88->../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:111) of variable 'input_r_load', ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:88->../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:111 on array 'buf_2d_in' [38]  (3.254 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [HLS 214-273] In function 'dct_2d', Pragma conflict happens on 'INLINE' and DATAFLOW pragmas: Inline into dataflow region may break the canonical form (../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:51:0)" projectName="lab3" solutionName="solution7" date="2024-12-01T14:18:46.993+0300" type="Warning"/>
+        <logs message="WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c&#xD;&#xA;Resolution: For help on HLS 200-471 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=200-471.html" projectName="lab3" solutionName="solution7" date="2024-12-01T14:18:44.909+0300" type="Warning"/>
+        <logs message="WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (F:/Education/FPGA_Labs/Labs_2/lab3/lab3/solution7/directives.tcl:15:9)&#xD;&#xA;Resolution: For help on HLS 214-114 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=214-114.html" projectName="lab3" solutionName="solution7" date="2024-12-01T14:18:44.715+0300" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'dct_1d.6.7' to 'dct_1d_6_7'." projectName="lab3" solutionName="solution6" date="2024-12-01T14:17:51.278+0300" type="Warning"/>
+        <logs message="WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file ../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c&#xD;&#xA;Resolution: For help on HLS 200-471 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=200-471.html" projectName="lab3" solutionName="solution6" date="2024-12-01T14:17:48.744+0300" type="Warning"/>
+        <logs message="WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (F:/Education/FPGA_Labs/Labs_2/lab3/lab3/solution6/directives.tcl:15:9)&#xD;&#xA;Resolution: For help on HLS 214-114 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=214-114.html" projectName="lab3" solutionName="solution6" date="2024-12-01T14:17:48.553+0300" type="Warning"/>
+        <logs message="WARNING: [HLS 200-960] Cannot flatten loop 'DCT_Outer_Loop' (../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:39:4) in function 'dct' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.&#xD;&#xA;Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=200-960.html" projectName="lab3" solutionName="solution3" date="2024-12-01T14:00:11.471+0300" type="Warning"/>
+        <logs message="WARNING: [HLS 200-960] Cannot flatten loop 'DCT_Outer_Loop' (../xup_high_level_synthesis_design_flow-main/source/lab3/dct.c:39:4) in function 'dct' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.&#xD;&#xA;Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=200-960.html" projectName="lab3" solutionName="solution3" date="2024-12-01T14:00:11.445+0300" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
