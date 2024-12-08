@@ -1,0 +1,9 @@
+--- !Failure
+Pass:            reflow-syncheck
+Name:            WarningOutOfBoundArrayAccess
+DebugLoc:        { File: ../xup_high_level_synthesis_design_flow-main/source/lab4/fir.cpp, 
+                   Line: 28, Column: 37 }
+Function:        _Z3firPssb
+Args:            
+  - String:          The program may have out of bound array access
+...

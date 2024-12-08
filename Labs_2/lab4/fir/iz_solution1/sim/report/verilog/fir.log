@@ -1,0 +1,309 @@
+INFO: [COSIM-47] Using XSIM for RTL simulation.
+INFO: [COSIM-14] Instrumenting C test bench ...
+   Build using "F:/Xilinx/Vitis/Vitis_HLS/2023.1/tps/win64/msys64/mingw64/bin/g++"
+   Compiling fir_test.cpp_pre.cpp.tb.cpp
+   Compiling apatb_fir.cpp
+   Compiling fir.cpp_pre.cpp.tb.cpp
+   Compiling apatb_fir_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM-302] Starting C TB testing ... 
+INFO: [COSIM-333] Generating C post check test bench ...
+INFO: [COSIM-12] Generating RTL test bench ...
+INFO: [COSIM-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM-323] Starting verilog simulation. 
+INFO: [COSIM-15] Starting XSIM ...
+INFO: [COSIM-316] Starting C post checking ...
+0 -32768 -2562
+1 0 -658
+2 0 -723
+3 0 -780
+4 0 -824
+5 0 -855
+6 0 -869
+7 0 -866
+8 0 -844
+9 0 -802
+10 0 -740
+11 0 -657
+12 0 -556
+13 0 -437
+14 0 -300
+15 0 -150
+16 0 12
+17 0 183
+18 0 359
+19 0 536
+20 0 712
+21 0 879
+22 0 1042
+23 0 1188
+24 0 1318
+25 0 1430
+26 0 1520
+27 0 1586
+28 0 1625
+29 0 -31130
+30 0 1625
+31 0 1586
+32 0 1520
+33 0 1430
+34 0 1318
+35 0 1188
+36 0 1042
+37 0 879
+38 0 712
+39 0 536
+40 0 359
+41 0 183
+42 0 12
+43 0 -150
+44 0 -300
+45 0 -437
+46 0 -556
+47 0 -657
+48 0 -740
+49 0 -802
+50 0 -844
+51 0 -866
+52 0 -869
+53 0 -855
+54 0 -824
+55 0 -780
+56 0 -723
+57 0 -658
+58 0 -2562
+59 0 0
+60 0 0
+61 0 0
+62 0 0
+63 0 0
+64 0 0
+65 0 0
+66 0 0
+67 0 0
+
+F:\Education\FPGA_Labs\Labs_2\lab4\fir\iz_solution1\sim\verilog>set PATH= 
+
+F:\Education\FPGA_Labs\Labs_2\lab4\fir\iz_solution1\sim\verilog>call F:/Xilinx/Vitis/Vivado/2023.1/bin/xelab xil_defaultlib.apatb_fir_top glbl -Oenable_linking_all_libraries  -prj fir.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_1_15 -L floating_point_v7_0_20 --lib "ieee_proposed=./ieee_proposed" -s fir  
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: F:/Xilinx/Vitis/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_fir_top glbl -Oenable_linking_all_libraries -prj fir.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_15 -L floating_point_v7_0_20 --lib ieee_proposed=./ieee_proposed -s fir 
+Multi-threading is on. Using 10 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Education/FPGA_Labs/Labs_2/lab4/fir/iz_solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Education/FPGA_Labs/Labs_2/lab4/fir/iz_solution1/sim/verilog/AESL_axi_slave_fir_io.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_fir_io
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Education/FPGA_Labs/Labs_2/lab4/fir/iz_solution1/sim/verilog/fir.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_fir_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Education/FPGA_Labs/Labs_2/lab4/fir/iz_solution1/sim/verilog/fir.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Education/FPGA_Labs/Labs_2/lab4/fir/iz_solution1/sim/verilog/fir_fir_io_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_fir_io_s_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Education/FPGA_Labs/Labs_2/lab4/fir/iz_solution1/sim/verilog/fir_fir_Pipeline_loop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_fir_Pipeline_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Education/FPGA_Labs/Labs_2/lab4/fir/iz_solution1/sim/verilog/fir_fir_Pipeline_loop_c1_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_fir_Pipeline_loop_c1_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Education/FPGA_Labs/Labs_2/lab4/fir/iz_solution1/sim/verilog/fir_fir_Pipeline_loop_c2_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_fir_Pipeline_loop_c2_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Education/FPGA_Labs/Labs_2/lab4/fir/iz_solution1/sim/verilog/fir_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Education/FPGA_Labs/Labs_2/lab4/fir/iz_solution1/sim/verilog/fir_mac_muladd_13s_16s_31s_31_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_mac_muladd_13s_16s_31s_31_4_1_DSP48_1
+INFO: [VRFC 10-311] analyzing module fir_mac_muladd_13s_16s_31s_31_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Education/FPGA_Labs/Labs_2/lab4/fir/iz_solution1/sim/verilog/fir_mac_muladd_16s_16s_37s_37_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module fir_mac_muladd_16s_16s_37s_37_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Education/FPGA_Labs/Labs_2/lab4/fir/iz_solution1/sim/verilog/fir_mul_28s_16s_28_3_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_mul_28s_16s_28_3_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Education/FPGA_Labs/Labs_2/lab4/fir/iz_solution1/sim/verilog/fir_shift_reg_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_shift_reg_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Education/FPGA_Labs/Labs_2/lab4/fir/iz_solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.fir_shift_reg_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.fir_fir_Pipeline_loop_c1_ROM_AUT...
+Compiling module xil_defaultlib.fir_fir_Pipeline_loop_c2_ROM_AUT...
+Compiling module xil_defaultlib.fir_mac_muladd_16s_16s_37s_37_4_...
+Compiling module xil_defaultlib.fir_mac_muladd_16s_16s_37s_37_4_...
+Compiling module xil_defaultlib.fir_flow_control_loop_pipe_seque...
+Compiling module xil_defaultlib.fir_fir_Pipeline_loop
+Compiling module xil_defaultlib.fir_fir_io_s_axi
+Compiling module xil_defaultlib.fir_mul_28s_16s_28_3_1(NUM_STAGE...
+Compiling module xil_defaultlib.fir_mac_muladd_13s_16s_31s_31_4_...
+Compiling module xil_defaultlib.fir_mac_muladd_13s_16s_31s_31_4_...
+Compiling module xil_defaultlib.fir
+Compiling module xil_defaultlib.AESL_axi_slave_fir_io
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_fir_top
+Compiling module work.glbl
+Built simulation snapshot fir
+
+****** xsim v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/fir/xsim_script.tcl
+# xsim {fir} -autoloadwcfg -tclbatch {fir.tcl}
+Time resolution is 1 ps
+source fir.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 68 [0.00%] @ "125000"
+// RTL Simulation : 1 / 68 [15.71%] @ "1205000"
+// RTL Simulation : 2 / 68 [15.71%] @ "2275000"
+// RTL Simulation : 3 / 68 [15.71%] @ "3305000"
+// RTL Simulation : 4 / 68 [15.71%] @ "4335000"
+// RTL Simulation : 5 / 68 [15.71%] @ "5365000"
+// RTL Simulation : 6 / 68 [15.71%] @ "6395000"
+// RTL Simulation : 7 / 68 [15.71%] @ "7425000"
+// RTL Simulation : 8 / 68 [15.71%] @ "8455000"
+// RTL Simulation : 9 / 68 [15.71%] @ "9485000"
+// RTL Simulation : 10 / 68 [15.71%] @ "10515000"
+// RTL Simulation : 11 / 68 [15.71%] @ "11545000"
+// RTL Simulation : 12 / 68 [15.71%] @ "12575000"
+// RTL Simulation : 13 / 68 [15.71%] @ "13605000"
+// RTL Simulation : 14 / 68 [15.71%] @ "14635000"
+// RTL Simulation : 15 / 68 [15.71%] @ "15665000"
+// RTL Simulation : 16 / 68 [15.71%] @ "16695000"
+// RTL Simulation : 17 / 68 [15.71%] @ "17725000"
+// RTL Simulation : 18 / 68 [15.71%] @ "18755000"
+// RTL Simulation : 19 / 68 [15.71%] @ "19785000"
+// RTL Simulation : 20 / 68 [15.71%] @ "20815000"
+// RTL Simulation : 21 / 68 [15.71%] @ "21845000"
+// RTL Simulation : 22 / 68 [15.71%] @ "22875000"
+// RTL Simulation : 23 / 68 [15.71%] @ "23905000"
+// RTL Simulation : 24 / 68 [15.71%] @ "24935000"
+// RTL Simulation : 25 / 68 [15.71%] @ "25965000"
+// RTL Simulation : 26 / 68 [15.71%] @ "26995000"
+// RTL Simulation : 27 / 68 [15.71%] @ "28025000"
+// RTL Simulation : 28 / 68 [15.71%] @ "29055000"
+// RTL Simulation : 29 / 68 [15.71%] @ "30085000"
+// RTL Simulation : 30 / 68 [15.71%] @ "31115000"
+// RTL Simulation : 31 / 68 [15.71%] @ "32145000"
+// RTL Simulation : 32 / 68 [15.71%] @ "33175000"
+// RTL Simulation : 33 / 68 [15.71%] @ "34205000"
+// RTL Simulation : 34 / 68 [15.71%] @ "35235000"
+// RTL Simulation : 35 / 68 [15.71%] @ "36265000"
+// RTL Simulation : 36 / 68 [15.71%] @ "37295000"
+// RTL Simulation : 37 / 68 [15.71%] @ "38325000"
+// RTL Simulation : 38 / 68 [15.71%] @ "39355000"
+// RTL Simulation : 39 / 68 [15.71%] @ "40385000"
+// RTL Simulation : 40 / 68 [15.71%] @ "41415000"
+// RTL Simulation : 41 / 68 [15.71%] @ "42445000"
+// RTL Simulation : 42 / 68 [15.71%] @ "43475000"
+// RTL Simulation : 43 / 68 [15.71%] @ "44505000"
+// RTL Simulation : 44 / 68 [15.71%] @ "45535000"
+// RTL Simulation : 45 / 68 [15.71%] @ "46565000"
+// RTL Simulation : 46 / 68 [15.71%] @ "47595000"
+// RTL Simulation : 47 / 68 [15.71%] @ "48625000"
+// RTL Simulation : 48 / 68 [15.71%] @ "49655000"
+// RTL Simulation : 49 / 68 [15.71%] @ "50685000"
+// RTL Simulation : 50 / 68 [15.71%] @ "51715000"
+// RTL Simulation : 51 / 68 [15.71%] @ "52745000"
+// RTL Simulation : 52 / 68 [15.71%] @ "53775000"
+// RTL Simulation : 53 / 68 [15.71%] @ "54805000"
+// RTL Simulation : 54 / 68 [15.71%] @ "55835000"
+// RTL Simulation : 55 / 68 [15.71%] @ "56865000"
+// RTL Simulation : 56 / 68 [15.71%] @ "57895000"
+// RTL Simulation : 57 / 68 [15.71%] @ "58925000"
+// RTL Simulation : 58 / 68 [15.71%] @ "59955000"
+// RTL Simulation : 59 / 68 [15.71%] @ "60985000"
+// RTL Simulation : 60 / 68 [15.71%] @ "62015000"
+// RTL Simulation : 61 / 68 [15.71%] @ "63045000"
+// RTL Simulation : 62 / 68 [15.71%] @ "64075000"
+// RTL Simulation : 63 / 68 [15.71%] @ "65105000"
+// RTL Simulation : 64 / 68 [15.71%] @ "66135000"
+// RTL Simulation : 65 / 68 [15.71%] @ "67165000"
+// RTL Simulation : 66 / 68 [15.71%] @ "68195000"
+// RTL Simulation : 67 / 68 [15.71%] @ "69225000"
+// RTL Simulation : 68 / 68 [100.00%] @ "70255000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 70315 ns : File "F:/Education/FPGA_Labs/Labs_2/lab4/fir/iz_solution1/sim/verilog/fir.autotb.v" Line 339
+## quit
+INFO: [Common 17-206] Exiting xsim at Sun Dec  8 18:17:00 2024...
+0 -32768 -2562
+1 0 -658
+2 0 -723
+3 0 -780
+4 0 -824
+5 0 -855
+6 0 -869
+7 0 -866
+8 0 -844
+9 0 -802
+10 0 -740
+11 0 -657
+12 0 -556
+13 0 -437
+14 0 -300
+15 0 -150
+16 0 12
+17 0 183
+18 0 359
+19 0 536
+20 0 712
+21 0 879
+22 0 1042
+23 0 1188
+24 0 1318
+25 0 1430
+26 0 1520
+27 0 1586
+28 0 1625
+29 0 -31130
+30 0 1625
+31 0 1586
+32 0 1520
+33 0 1430
+34 0 1318
+35 0 1188
+36 0 1042
+37 0 879
+38 0 712
+39 0 536
+40 0 359
+41 0 183
+42 0 12
+43 0 -150
+44 0 -300
+45 0 -437
+46 0 -556
+47 0 -657
+48 0 -740
+49 0 -802
+50 0 -844
+51 0 -866
+52 0 -869
+53 0 -855
+54 0 -824
+55 0 -780
+56 0 -723
+57 0 -658
+58 0 -2562
+59 0 0
+60 0 0
+61 0 0
+62 0 0
+63 0 0
+64 0 0
+65 0 0
+66 0 0
+67 0 0
+INFO: [COSIM-1000] *** C/RTL co-simulation finished: PASS ***

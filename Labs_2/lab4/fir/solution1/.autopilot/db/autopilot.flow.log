@@ -663,3 +663,632 @@ Command   export_design done; 30.865 sec.
 INFO: [HLS 200-111] Finished Command export_design CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 30.865 seconds; current allocated memory: 7.426 MB.
 Command ap_source done; 32.728 sec.
 Execute cleanup_all 
+INFO-FLOW: Workspace F:/Education/FPGA_Labs/Labs_2/lab4/fir/solution1 opened at Sun Dec 08 15:06:18 +0300 2024
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_part xc7z020clg484-1 
+Execute       create_platform xc7z020clg484-1 -board  
+DBG:HLSDevice: Trying to load device library: F:/Xilinx/Vitis/Vitis_HLS/2023.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: F:/Xilinx/Vitis/Vivado/2023.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+Command       create_platform done; 1.694 sec.
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.24 sec.
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.959 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_cosim -tool=xsim 
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+Execute     config_cosim -tool=xsim 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 2.161 sec.
+Execute   set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+Execute     create_platform xc7z020clg484-1 -board  
+Execute     source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.109 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute   config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+Execute   config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+Execute   source ./fir/solution1/directives.tcl 
+INFO: [HLS 200-1510] Running: source ./fir/solution1/directives.tcl
+Execute     set_directive_top -name fir fir 
+INFO: [HLS 200-1510] Running: set_directive_top -name fir fir 
+Execute     set_directive_interface -mode s_axilite -bundle fir_io fir 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode s_axilite -bundle fir_io fir 
+Execute   csim_design -quiet 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+Execute     source F:/Education/FPGA_Labs/Labs_2/lab4/fir/solution1/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
+4
+    while executing
+"::AESL_CSIM::csim_cmd_wrap $args"
+INFO-FLOW: Caught error in csim_design: 4
+    while executing
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 7.548 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 7.549 seconds; current allocated memory: 0.293 MB.
+Command ap_source done; error code: 1; 9.949 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace F:/Education/FPGA_Labs/Labs_2/lab4/fir/solution1 opened at Sun Dec 08 15:31:59 +0300 2024
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_part xc7z020-clg484-1 
+Execute       create_platform xc7z020-clg484-1 -board  
+DBG:HLSDevice: Trying to load device library: F:/Xilinx/Vitis/Vitis_HLS/2023.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: F:/Xilinx/Vitis/Vivado/2023.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+Command       create_platform done; 1.496 sec.
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.596 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_cosim -tool=xsim 
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+Execute     config_cosim -tool=xsim 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 1.703 sec.
+Execute   set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+Execute     create_platform xc7z020clg484-1 -board  
+Execute     source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.104 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute   config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+Execute   config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+Execute   source ./fir/solution1/directives.tcl 
+INFO: [HLS 200-1510] Running: source ./fir/solution1/directives.tcl
+Execute     set_directive_top -name fir fir 
+INFO: [HLS 200-1510] Running: set_directive_top -name fir fir 
+Execute     set_directive_interface -mode s_axilite -bundle fir_io fir 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode s_axilite -bundle fir_io fir 
+Execute   csim_design -clean -quiet 
+INFO: [HLS 200-1510] Running: csim_design -clean -quiet 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+Execute     source F:/Education/FPGA_Labs/Labs_2/lab4/fir/solution1/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
+4
+    while executing
+"::AESL_CSIM::csim_cmd_wrap $args"
+INFO-FLOW: Caught error in csim_design: 4
+    while executing
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 10.646 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 10.646 seconds; current allocated memory: 0.363 MB.
+Command ap_source done; error code: 1; 12.53 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace F:/Education/FPGA_Labs/Labs_2/lab4/fir/solution1 opened at Sun Dec 08 15:33:36 +0300 2024
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_part xc7z020-clg484-1 
+Execute       create_platform xc7z020-clg484-1 -board  
+DBG:HLSDevice: Trying to load device library: F:/Xilinx/Vitis/Vitis_HLS/2023.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: F:/Xilinx/Vitis/Vivado/2023.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+Command       create_platform done; 1.493 sec.
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.596 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_cosim -tool=xsim 
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+Execute     config_cosim -tool=xsim 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 1.699 sec.
+Execute   set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+Execute     create_platform xc7z020clg484-1 -board  
+Execute     source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.106 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute   config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+Execute   config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+Execute   source ./fir/solution1/directives.tcl 
+INFO: [HLS 200-1510] Running: source ./fir/solution1/directives.tcl
+Execute     set_directive_top -name fir fir 
+INFO: [HLS 200-1510] Running: set_directive_top -name fir fir 
+Execute     set_directive_interface -mode s_axilite -bundle fir_io fir 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode s_axilite -bundle fir_io fir 
+Execute   csim_design -quiet 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+Execute     source F:/Education/FPGA_Labs/Labs_2/lab4/fir/solution1/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
+4
+    while executing
+"::AESL_CSIM::csim_cmd_wrap $args"
+INFO-FLOW: Caught error in csim_design: 4
+    while executing
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 4.792 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 4.792 seconds; current allocated memory: 0.387 MB.
+Command ap_source done; error code: 1; 6.933 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace F:/Education/FPGA_Labs/Labs_2/lab4/fir/solution1 opened at Sun Dec 08 15:34:58 +0300 2024
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_part xc7z020-clg484-1 
+Execute       create_platform xc7z020-clg484-1 -board  
+DBG:HLSDevice: Trying to load device library: F:/Xilinx/Vitis/Vitis_HLS/2023.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: F:/Xilinx/Vitis/Vivado/2023.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+Command       create_platform done; 1.481 sec.
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.575 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_cosim -tool=xsim 
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+Execute     config_cosim -tool=xsim 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 1.661 sec.
+Execute   set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+Execute     create_platform xc7z020clg484-1 -board  
+Execute     source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute   config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+Execute   config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+Execute   source ./fir/solution1/directives.tcl 
+INFO: [HLS 200-1510] Running: source ./fir/solution1/directives.tcl
+Execute     set_directive_top -name fir fir 
+INFO: [HLS 200-1510] Running: set_directive_top -name fir fir 
+Execute     set_directive_interface -mode s_axilite -bundle fir_io fir 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode s_axilite -bundle fir_io fir 
+Execute   csim_design -clean -quiet 
+INFO: [HLS 200-1510] Running: csim_design -clean -quiet 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+Execute     source F:/Education/FPGA_Labs/Labs_2/lab4/fir/solution1/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
+4
+    while executing
+"::AESL_CSIM::csim_cmd_wrap $args"
+INFO-FLOW: Caught error in csim_design: 4
+    while executing
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 9.939 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 9.94 seconds; current allocated memory: 0.414 MB.
+Command ap_source done; error code: 1; 11.73 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace F:/Education/FPGA_Labs/Labs_2/lab4/fir/solution1 opened at Sun Dec 08 15:37:15 +0300 2024
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_part xc7z020-clg484-1 
+Execute       create_platform xc7z020-clg484-1 -board  
+DBG:HLSDevice: Trying to load device library: F:/Xilinx/Vitis/Vitis_HLS/2023.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: F:/Xilinx/Vitis/Vivado/2023.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+Command       create_platform done; 1.512 sec.
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.616 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_cosim -tool=xsim 
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+Execute     config_cosim -tool=xsim 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 1.713 sec.
+Execute   set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+Execute     create_platform xc7z020clg484-1 -board  
+Execute     source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute   config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+Execute   config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+Execute   source ./fir/solution1/directives.tcl 
+INFO: [HLS 200-1510] Running: source ./fir/solution1/directives.tcl
+Execute     set_directive_top -name fir fir 
+INFO: [HLS 200-1510] Running: set_directive_top -name fir fir 
+Execute     set_directive_interface -mode s_axilite -bundle fir_io fir 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode s_axilite -bundle fir_io fir 
+Execute   csim_design -quiet 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+Execute     source F:/Education/FPGA_Labs/Labs_2/lab4/fir/solution1/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
+4
+    while executing
+"::AESL_CSIM::csim_cmd_wrap $args"
+INFO-FLOW: Caught error in csim_design: 4
+    while executing
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 4.724 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 4.724 seconds; current allocated memory: 0.363 MB.
+Command ap_source done; error code: 1; 6.59 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace F:/Education/FPGA_Labs/Labs_2/lab4/fir/solution1 opened at Sun Dec 08 15:40:00 +0300 2024
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_part xc7z020-clg484-1 
+Execute       create_platform xc7z020-clg484-1 -board  
+DBG:HLSDevice: Trying to load device library: F:/Xilinx/Vitis/Vitis_HLS/2023.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: F:/Xilinx/Vitis/Vivado/2023.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+Command       create_platform done; 1.503 sec.
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.597 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_cosim -tool=xsim 
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+Execute     config_cosim -tool=xsim 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 1.68 sec.
+Execute   set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+Execute     create_platform xc7z020clg484-1 -board  
+Execute     source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute   config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+Execute   config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+Execute   source ./fir/solution1/directives.tcl 
+INFO: [HLS 200-1510] Running: source ./fir/solution1/directives.tcl
+Execute     set_directive_top -name fir fir 
+INFO: [HLS 200-1510] Running: set_directive_top -name fir fir 
+Execute     set_directive_interface -mode s_axilite -bundle fir_io fir 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode s_axilite -bundle fir_io fir 
+Execute   csim_design -quiet 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+Execute     source F:/Education/FPGA_Labs/Labs_2/lab4/fir/solution1/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
+4
+    while executing
+"::AESL_CSIM::csim_cmd_wrap $args"
+INFO-FLOW: Caught error in csim_design: 4
+    while executing
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 4.789 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 4.789 seconds; current allocated memory: 0.367 MB.
+Command ap_source done; error code: 1; 6.597 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace F:/Education/FPGA_Labs/Labs_2/lab4/fir/solution1 opened at Sun Dec 08 15:41:22 +0300 2024
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_part xc7z020-clg484-1 
+Execute       create_platform xc7z020-clg484-1 -board  
+DBG:HLSDevice: Trying to load device library: F:/Xilinx/Vitis/Vitis_HLS/2023.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: F:/Xilinx/Vitis/Vivado/2023.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+Command       create_platform done; 1.484 sec.
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.578 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_cosim -tool=xsim 
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+Execute     config_cosim -tool=xsim 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 1.663 sec.
+Execute   set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+Execute     create_platform xc7z020clg484-1 -board  
+Execute     source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute   config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+Execute   config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+Execute   source ./fir/solution1/directives.tcl 
+INFO: [HLS 200-1510] Running: source ./fir/solution1/directives.tcl
+Execute     set_directive_top -name fir fir 
+INFO: [HLS 200-1510] Running: set_directive_top -name fir fir 
+Execute     set_directive_interface -mode s_axilite -bundle fir_io fir 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode s_axilite -bundle fir_io fir 
+Execute   csim_design -quiet 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+Execute     source F:/Education/FPGA_Labs/Labs_2/lab4/fir/solution1/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
+4
+    while executing
+"::AESL_CSIM::csim_cmd_wrap $args"
+INFO-FLOW: Caught error in csim_design: 4
+    while executing
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 5.807 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 5.807 seconds; current allocated memory: 0.289 MB.
+Command ap_source done; error code: 1; 7.595 sec.
+Execute cleanup_all 

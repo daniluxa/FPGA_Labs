@@ -134,8 +134,8 @@ OPTRACE "set parameters" START { }
   set_property webtalk.parent_dir F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.cache/wt [current_project]
   set_property parent.project_path F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.xpr [current_project]
   set_property ip_repo_paths {
-  f:/Education/FPGA_Labs/Labs_2/lab4/fir/solution1/impl/ip
-  F:/Education/FPGA_Labs/Labs_2/lab4/audio_codec_ctrl_v1.0
+  f:/Education/FPGA_Labs/Labs_2/lab4/audio_codec_ctrl_v1.0
+  F:/Education/FPGA_Labs/Labs_2/lab4/fir/iz_solution1/impl
 } [current_project]
   update_ip_catalog
   set_property ip_output_repo F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.cache/ip [current_project]

@@ -1,0 +1,25 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="" msg_id="207-943" msg_severity="WARNING" msg_loc="F:/Xilinx/Vitis/Vitis_HLS/2023.1/common/technology/autopilot\legacy/ap_cint.h:14:2" msg_body="This header file cannot be used in a C++ design. C-synthesis will fail.">
+        <args ClangWarningOption="#warnings"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Education/FPGA_Labs/Labs_2/lab4/fir/iz_solution1/csynth.tcl:19:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="fir" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=fir" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Education/FPGA_Labs/Labs_2/lab4/fir/iz_solution1/directives.tcl:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="fir" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=fir" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Education/FPGA_Labs/Labs_2/lab4/fir/iz_solution1/directives.tcl:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="fir" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite bundle=fir_io port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../xup_high_level_synthesis_design_flow-main/source/lab4/fir.cpp:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fir" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=fir_io" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../xup_high_level_synthesis_design_flow-main/source/lab4/fir.cpp:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fir" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite bundle=fir_io port=y" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../xup_high_level_synthesis_design_flow-main/source/lab4/fir.cpp:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fir" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite bundle=fir_io port=x" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-167" msg_severity="WARNING" msg_loc="../xup_high_level_synthesis_design_flow-main/source/lab4/fir.cpp:28:37" msg_body="The program may have out of bound array access"/>
+</xilinx:hls_fe_msgs>
+

@@ -3,8 +3,8 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Sun Dec  1 19:28:37 2024
-# Process ID: 10232
+# Start of session at: Sun Dec  8 18:19:03 2024
+# Process ID: 17808
 # Current directory: F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.runs/synth_1/design_1_wrapper.vds
@@ -12,10 +12,10 @@
 # Running On: DESKTOP-2ENERJB, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 6, Host memory: 34191 MB
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 911.625 ; gain = 160.074
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 911.828 ; gain = 160.426
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Education/FPGA_Labs/Labs_2/lab4/fir/solution1/impl/ip'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Education/FPGA_Labs/Labs_2/lab4/audio_codec_ctrl_v1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Education/FPGA_Labs/Labs_2/lab4/fir/iz_solution1/impl'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vitis/Vivado/2023.1/data/ip'.
 Command: read_checkpoint -auto_incremental -incremental F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
@@ -29,58 +29,58 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 13240
+INFO: [Synth 8-7075] Helper process launched with PID 17472
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1787.488 ; gain = 411.324
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1786.672 ; gain = 411.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'IOBUF' [F:/Xilinx/Vitis/Vivado/2023.1/scripts/rt/data/unisim_comp.v:76334]
 INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [F:/Xilinx/Vitis/Vivado/2023.1/scripts/rt/data/unisim_comp.v:76334]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6157] synthesizing module 'design_1_audio_codec_ctrl_0_0' [F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.runs/synth_1/.Xil/Vivado-10232-DESKTOP-2ENERJB/realtime/design_1_audio_codec_ctrl_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_audio_codec_ctrl_0_0' (0#1) [F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.runs/synth_1/.Xil/Vivado-10232-DESKTOP-2ENERJB/realtime/design_1_audio_codec_ctrl_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'codec_address' of module 'design_1_audio_codec_ctrl_0_0' is unconnected for instance 'audio_codec_ctrl_0' [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:252]
-WARNING: [Synth 8-7023] instance 'audio_codec_ctrl_0' of module 'design_1_audio_codec_ctrl_0_0' has 24 connections declared, but only 23 given [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:252]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_0' [F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.runs/synth_1/.Xil/Vivado-10232-DESKTOP-2ENERJB/realtime/design_1_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_0' (0#1) [F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.runs/synth_1/.Xil/Vivado-10232-DESKTOP-2ENERJB/realtime/design_1_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_fir_0_0' [F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.runs/synth_1/.Xil/Vivado-10232-DESKTOP-2ENERJB/realtime/design_1_fir_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_fir_0_0' (0#1) [F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.runs/synth_1/.Xil/Vivado-10232-DESKTOP-2ENERJB/realtime/design_1_fir_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_fir_1_0' [F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.runs/synth_1/.Xil/Vivado-10232-DESKTOP-2ENERJB/realtime/design_1_fir_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_fir_1_0' (0#1) [F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.runs/synth_1/.Xil/Vivado-10232-DESKTOP-2ENERJB/realtime/design_1_fir_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.runs/synth_1/.Xil/Vivado-10232-DESKTOP-2ENERJB/realtime/design_1_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (0#1) [F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.runs/synth_1/.Xil/Vivado-10232-DESKTOP-2ENERJB/realtime/design_1_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ps7_0_axi_periph_0' [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:545]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_15SPJYW' [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:1346]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_15SPJYW' (0#1) [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:1346]
-INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_XU9C55' [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:1478]
-INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_XU9C55' (0#1) [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:1478]
-INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_14WQB4R' [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:1610]
-INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_14WQB4R' (0#1) [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:1610]
-INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_YFYJ3U' [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:1742]
-INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_YFYJ3U' (0#1) [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:1742]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UYSKKA' [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:1874]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.runs/synth_1/.Xil/Vivado-10232-DESKTOP-2ENERJB/realtime/design_1_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (0#1) [F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.runs/synth_1/.Xil/Vivado-10232-DESKTOP-2ENERJB/realtime/design_1_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UYSKKA' (0#1) [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:1874]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.runs/synth_1/.Xil/Vivado-10232-DESKTOP-2ENERJB/realtime/design_1_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (0#1) [F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.runs/synth_1/.Xil/Vivado-10232-DESKTOP-2ENERJB/realtime/design_1_xbar_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_xbar_0' is unconnected for instance 'xbar' [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:1305]
-WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_xbar_0' is unconnected for instance 'xbar' [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:1305]
-WARNING: [Synth 8-7023] instance 'xbar' of module 'design_1_xbar_0' has 40 connections declared, but only 38 given [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:1305]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ps7_0_axi_periph_0' (0#1) [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:545]
-INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_100M_0' [F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.runs/synth_1/.Xil/Vivado-10232-DESKTOP-2ENERJB/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_100M_0' (0#1) [F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.runs/synth_1/.Xil/Vivado-10232-DESKTOP-2ENERJB/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:532]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:532]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:532]
-WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:532]
-WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'design_1_rst_ps7_0_100M_0' has 10 connections declared, but only 6 given [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:532]
+INFO: [Synth 8-6157] synthesizing module 'design_1_audio_codec_ctrl_0_0' [F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.runs/synth_1/.Xil/Vivado-17808-DESKTOP-2ENERJB/realtime/design_1_audio_codec_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_audio_codec_ctrl_0_0' (0#1) [F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.runs/synth_1/.Xil/Vivado-17808-DESKTOP-2ENERJB/realtime/design_1_audio_codec_ctrl_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'codec_address' of module 'design_1_audio_codec_ctrl_0_0' is unconnected for instance 'audio_codec_ctrl_0' [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:256]
+WARNING: [Synth 8-7023] instance 'audio_codec_ctrl_0' of module 'design_1_audio_codec_ctrl_0_0' has 24 connections declared, but only 23 given [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:256]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_0' [F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.runs/synth_1/.Xil/Vivado-17808-DESKTOP-2ENERJB/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_0' (0#1) [F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.runs/synth_1/.Xil/Vivado-17808-DESKTOP-2ENERJB/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_fir_0_4' [F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.runs/synth_1/.Xil/Vivado-17808-DESKTOP-2ENERJB/realtime/design_1_fir_0_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_fir_0_4' (0#1) [F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.runs/synth_1/.Xil/Vivado-17808-DESKTOP-2ENERJB/realtime/design_1_fir_0_4_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_fir_1_2' [F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.runs/synth_1/.Xil/Vivado-17808-DESKTOP-2ENERJB/realtime/design_1_fir_1_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_fir_1_2' (0#1) [F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.runs/synth_1/.Xil/Vivado-17808-DESKTOP-2ENERJB/realtime/design_1_fir_1_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.runs/synth_1/.Xil/Vivado-17808-DESKTOP-2ENERJB/realtime/design_1_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (0#1) [F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.runs/synth_1/.Xil/Vivado-17808-DESKTOP-2ENERJB/realtime/design_1_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ps7_0_axi_periph_0' [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:551]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_15SPJYW' [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:1352]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_15SPJYW' (0#1) [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:1352]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_XU9C55' [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:1484]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_XU9C55' (0#1) [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:1484]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_14WQB4R' [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:1616]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_14WQB4R' (0#1) [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:1616]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_YFYJ3U' [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:1748]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_YFYJ3U' (0#1) [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:1748]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UYSKKA' [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:1880]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.runs/synth_1/.Xil/Vivado-17808-DESKTOP-2ENERJB/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (0#1) [F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.runs/synth_1/.Xil/Vivado-17808-DESKTOP-2ENERJB/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UYSKKA' (0#1) [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:1880]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.runs/synth_1/.Xil/Vivado-17808-DESKTOP-2ENERJB/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (0#1) [F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.runs/synth_1/.Xil/Vivado-17808-DESKTOP-2ENERJB/realtime/design_1_xbar_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_xbar_0' is unconnected for instance 'xbar' [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:1311]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_xbar_0' is unconnected for instance 'xbar' [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:1311]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'design_1_xbar_0' has 40 connections declared, but only 38 given [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:1311]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ps7_0_axi_periph_0' (0#1) [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:551]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_100M_0' [F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.runs/synth_1/.Xil/Vivado-17808-DESKTOP-2ENERJB/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_100M_0' (0#1) [F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.runs/synth_1/.Xil/Vivado-17808-DESKTOP-2ENERJB/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:538]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:538]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:538]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:538]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'design_1_rst_ps7_0_100M_0' has 10 connections declared, but only 6 given [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:538]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xlconcat_0_0' [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconcat_0_0' (0#1) [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:53]
 INFO: [Synth 8-6155] done synthesizing module 'design_1' (0#1) [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
 WARNING: [Synth 8-7129] Port In2[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
 WARNING: [Synth 8-7129] Port In3[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
 WARNING: [Synth 8-7129] Port In4[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
@@ -183,18 +183,18 @@ WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_4_xlconcat is eith
 WARNING: [Synth 8-7129] Port In101[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1886.859 ; gain = 510.695
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1886.062 ; gain = 510.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1886.859 ; gain = 510.695
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1903.984 ; gain = 528.312
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1886.859 ; gain = 510.695
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1903.984 ; gain = 528.312
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1886.859 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1916.027 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -213,36 +213,38 @@ Parsing XDC File [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sou
 Finished Parsing XDC File [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_ps7_0_100M'
 Parsing XDC File [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/ip/design_1_audio_codec_ctrl_0_0/design_1_audio_codec_ctrl_0_0/design_1_audio_codec_ctrl_0_0_in_context.xdc] for cell 'design_1_i/audio_codec_ctrl_0'
 Finished Parsing XDC File [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/ip/design_1_audio_codec_ctrl_0_0/design_1_audio_codec_ctrl_0_0/design_1_audio_codec_ctrl_0_0_in_context.xdc] for cell 'design_1_i/audio_codec_ctrl_0'
-Parsing XDC File [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/ip/design_1_fir_0_0/design_1_fir_0_0/design_1_fir_0_0_in_context.xdc] for cell 'design_1_i/fir_0'
-Finished Parsing XDC File [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/ip/design_1_fir_0_0/design_1_fir_0_0/design_1_fir_0_0_in_context.xdc] for cell 'design_1_i/fir_0'
-Parsing XDC File [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/ip/design_1_fir_1_0/design_1_fir_1_0/design_1_fir_0_0_in_context.xdc] for cell 'design_1_i/fir_1'
-Finished Parsing XDC File [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/ip/design_1_fir_1_0/design_1_fir_1_0/design_1_fir_0_0_in_context.xdc] for cell 'design_1_i/fir_1'
+Parsing XDC File [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/ip/design_1_fir_0_4/design_1_fir_0_4/design_1_fir_0_4_in_context.xdc] for cell 'design_1_i/fir_0'
+Finished Parsing XDC File [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/ip/design_1_fir_0_4/design_1_fir_0_4/design_1_fir_0_4_in_context.xdc] for cell 'design_1_i/fir_0'
+Parsing XDC File [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/ip/design_1_fir_1_2/design_1_fir_1_2/design_1_fir_0_4_in_context.xdc] for cell 'design_1_i/fir_1'
+Finished Parsing XDC File [f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/ip/design_1_fir_1_2/design_1_fir_1_2/design_1_fir_0_4_in_context.xdc] for cell 'design_1_i/fir_1'
 Parsing XDC File [F:/Education/FPGA_Labs/Labs_2/lab4/cnstr/zedboard.xdc]
 WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 13]]'. [F:/Education/FPGA_Labs/Labs_2/lab4/cnstr/zedboard.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'switch_var_0'. [F:/Education/FPGA_Labs/Labs_2/lab4/cnstr/zedboard.xdc:69]
 Finished Parsing XDC File [F:/Education/FPGA_Labs/Labs_2/lab4/cnstr/zedboard.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [F:/Education/FPGA_Labs/Labs_2/lab4/cnstr/zedboard.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/Education/FPGA_Labs/Labs_2/lab4/cnstr/zedboard.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1887.766 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1956.105 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 4 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 4 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1887.766 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1956.105 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1887.766 ; gain = 511.602
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1956.105 ; gain = 580.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1887.766 ; gain = 511.602
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1956.105 ; gain = 580.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -515,14 +517,14 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph/s00_c
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_ps7_0_100M. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/audio_codec_ctrl_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlconcat_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/fir_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/fir_1. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlconcat_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1887.766 ; gain = 511.602
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1956.105 ; gain = 580.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1887.766 ; gain = 511.602
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1956.105 ; gain = 580.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -545,25 +547,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1887.766 ; gain = 511.602
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1956.105 ; gain = 580.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1887.766 ; gain = 511.602
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1956.105 ; gain = 580.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1887.766 ; gain = 511.602
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1956.105 ; gain = 580.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1887.766 ; gain = 511.602
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1956.105 ; gain = 580.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -581,37 +583,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1890.695 ; gain = 514.531
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1956.105 ; gain = 580.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1890.695 ; gain = 514.531
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1956.105 ; gain = 580.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1890.695 ; gain = 514.531
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1956.105 ; gain = 580.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1890.695 ; gain = 514.531
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1956.105 ; gain = 580.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1890.695 ; gain = 514.531
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1956.105 ; gain = 580.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1890.695 ; gain = 514.531
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1956.105 ; gain = 580.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -625,8 +627,8 @@ Report BlackBoxes:
 |2     |design_1_auto_pc_0              |         1|
 |3     |design_1_audio_codec_ctrl_0_0   |         1|
 |4     |design_1_axi_gpio_0_0           |         1|
-|5     |design_1_fir_0_0                |         1|
-|6     |design_1_fir_1_0                |         1|
+|5     |design_1_fir_0_4                |         1|
+|6     |design_1_fir_1_2                |         1|
 |7     |design_1_processing_system7_0_0 |         1|
 |8     |design_1_rst_ps7_0_100M_0       |         1|
 +------+--------------------------------+----------+
@@ -643,32 +645,32 @@ Report Cell Usage:
 |6     |design_1_processing_system7_0 |     1|
 |7     |design_1_rst_ps7_0_100M       |     1|
 |8     |design_1_xbar                 |     1|
-|9     |IBUF                          |     2|
+|9     |IBUF                          |     3|
 |10    |IOBUF                         |     4|
 |11    |OBUF                          |     4|
 +------+------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1890.695 ; gain = 514.531
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1956.105 ; gain = 580.434
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1890.695 ; gain = 513.625
-Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1890.695 ; gain = 514.531
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 1956.105 ; gain = 528.312
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1956.105 ; gain = 580.434
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1890.695 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1956.105 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1917.277 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1956.105 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 4 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 4 instances
 
-Synth Design complete | Checksum: 14b0ebd1
+Synth Design complete | Checksum: e0215196
 INFO: [Common 17-83] Releasing license: Synthesis
-66 Infos, 112 Warnings, 0 Critical Warnings and 0 Errors encountered.
+66 Infos, 114 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1917.277 ; gain = 954.090
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1956.105 ; gain = 994.574
 INFO: [Common 17-1381] The checkpoint 'F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Dec  1 19:29:18 2024...
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  8 18:19:36 2024...

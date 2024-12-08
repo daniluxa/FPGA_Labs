@@ -1,0 +1,10 @@
+17:55:48 **** Build of configuration Debug for project iz_audio_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 64237 F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/design_1_wrapper_iz/export/design_1_wrapper_iz/design_1_wrapper_iz.xpfm standalone_ps7_cortexa9_0 F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/iz_audio_system/Debug/system.bif
+sdcard_gen --xpfm F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/design_1_wrapper_iz/export/design_1_wrapper_iz/design_1_wrapper_iz.xpfm --sys_config design_1_wrapper_iz --bif F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/iz_audio_system/Debug/system.bif --bitstream F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/iz_audio/_ide/bitstream/iz_2_design_1_wrapper.bit --elf F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/iz_audio/Debug/iz_audio.elf,ps7_cortexa9_0
+creating BOOT.BIN using F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/iz_audio/_ide/bitstream/iz_2_design_1_wrapper.bit
+Running F:/Xilinx/Vitis/Vitis/2023.1/bin/bootgen  -image F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/iz_audio_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+17:55:52 Build Finished (took 4s.685ms)
+

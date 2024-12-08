@@ -30,13 +30,15 @@
 #include "fir.h"
 void fir (
   data_t *y,
-  data_t x
+  data_t x,
+  bool switch_var
   );
 
 int main () {
   FILE   *fp;
 
   data_t signal, output;
+  bool _switch;
 
   fp=fopen("fir_impulse.dat","w");
   int i;
@@ -45,7 +47,7 @@ int main () {
 		  signal = 0x8000;
 	  else
 		  signal = 0;
-	  fir(&output,signal);
+	  fir(&output,signal, _switch);
    	  printf("%i %d %d\n",i,(int)signal,(int)output);
 //   	  fprintf(fp,"%i %d %d\n",i,signal,output);
   }

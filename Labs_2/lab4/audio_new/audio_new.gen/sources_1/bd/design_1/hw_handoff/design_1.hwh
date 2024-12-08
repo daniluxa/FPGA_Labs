@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Dec  1 19:27:37 2024" VIVADOVERSION="2023.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Dec  8 18:18:07 2024" VIVADOVERSION="2023.1">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zedboard:part0:1.1" DEVICE="7z020" NAME="design_1" PACKAGE="clg484" SPEEDGRADE="-1"/>
 
@@ -129,33 +129,6 @@
         <CONNECTION INSTANCE="axi_gpio_0" PORT="gpio2_io_i"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="0" NAME="GPIO2_tri_o" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="0" NAME="GPIO2_tri_t" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" NAME="BCLK" SIGIS="undef" SIGNAME="audio_codec_ctrl_0_bclk">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="audio_codec_ctrl_0" PORT="bclk"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="LRCLK" SIGIS="undef" SIGNAME="audio_codec_ctrl_0_lrclk">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="audio_codec_ctrl_0" PORT="lrclk"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="SDATA_O" SIGIS="undef" SIGNAME="audio_codec_ctrl_0_sdata_o">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="audio_codec_ctrl_0" PORT="sdata_o"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="SDATA_I" SIGIS="undef" SIGNAME="External_Ports_SDATA_I">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="audio_codec_ctrl_0" PORT="sdata_i"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT CLKFREQUENCY="10000000" DIR="O" NAME="FCLK_CLK1" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK1">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK1"/>
-      </CONNECTIONS>
-    </PORT>
     <PORT DIR="I" NAME="IIC_1_sda_i" SIGIS="undef" SIGNAME="processing_system7_0_I2C1_SDA_I">
       <CONNECTIONS>
         <CONNECTION INSTANCE="processing_system7_0" PORT="I2C1_SDA_I"/>
@@ -184,6 +157,37 @@
     <PORT DIR="O" NAME="IIC_1_scl_t" SIGIS="undef" SIGNAME="processing_system7_0_I2C1_SCL_T">
       <CONNECTIONS>
         <CONNECTION INSTANCE="processing_system7_0" PORT="I2C1_SCL_T"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="BCLK" SIGIS="undef" SIGNAME="audio_codec_ctrl_0_bclk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="audio_codec_ctrl_0" PORT="bclk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="LRCLK" SIGIS="undef" SIGNAME="audio_codec_ctrl_0_lrclk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="audio_codec_ctrl_0" PORT="lrclk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SDATA_O" SIGIS="undef" SIGNAME="audio_codec_ctrl_0_sdata_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="audio_codec_ctrl_0" PORT="sdata_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="SDATA_I" SIGIS="undef" SIGNAME="External_Ports_SDATA_I">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="audio_codec_ctrl_0" PORT="sdata_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="10000000" DIR="O" NAME="FCLK_CLK1" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="SWITCH" SIGIS="data" SIGNAME="External_Ports_SWITCH">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="fir_0" PORT="switch_var"/>
+        <CONNECTION INSTANCE="fir_1" PORT="switch_var"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -243,8 +247,6 @@
     <BUSINTERFACE BUSNAME="axi_gpio_0_GPIO2" NAME="GPIO2" TYPE="INITIATOR">
       <PORTMAPS>
         <PORTMAP LOGICAL="TRI_I" PHYSICAL="GPIO2_tri_i"/>
-        <PORTMAP LOGICAL="TRI_O" PHYSICAL="GPIO2_tri_o"/>
-        <PORTMAP LOGICAL="TRI_T" PHYSICAL="GPIO2_tri_t"/>
       </PORTMAPS>
     </BUSINTERFACE>
     <BUSINTERFACE BUSNAME="processing_system7_0_IIC_1" NAME="IIC_1" TYPE="INITIATOR">
@@ -833,7 +835,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="2113846888" FULLNAME="/fir_0" HWVERSION="1.0" INSTANCE="fir_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="fir" VLNV="xilinx.com:hls:fir:1.0">
+    <MODULE COREREVISION="2113857137" FULLNAME="/fir_0" HWVERSION="1.0" INSTANCE="fir_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="fir" VLNV="xilinx.com:hls:fir:1.0">
       <DOCUMENTS/>
       <ADDRESSBLOCKS>
         <ADDRESSBLOCK ACCESS="read-write" INTERFACE="s_axi_fir_io" NAME="Reg" RANGE="65536" USAGE="register">
@@ -1144,11 +1146,11 @@
       <PARAMETERS>
         <PARAMETER NAME="C_S_AXI_FIR_IO_ADDR_WIDTH" VALUE="6"/>
         <PARAMETER NAME="C_S_AXI_FIR_IO_DATA_WIDTH" VALUE="32"/>
-        <PARAMETER NAME="Component_Name" VALUE="design_1_fir_0_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_fir_0_4"/>
         <PARAMETER NAME="clk_period" VALUE="10"/>
         <PARAMETER NAME="machine" VALUE="64"/>
         <PARAMETER NAME="combinational" VALUE="0"/>
-        <PARAMETER NAME="latency" VALUE="68"/>
+        <PARAMETER NAME="latency" VALUE="70"/>
         <PARAMETER NAME="II" VALUE="x"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
         <PARAMETER NAME="C_S_AXI_FIR_IO_BASEADDR" VALUE="0x40000000"/>
@@ -1255,6 +1257,11 @@
             <CONNECTION INSTANCE="xlconcat_0" PORT="In0"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="I" NAME="switch_var" SIGIS="data" SIGNAME="External_Ports_SWITCH">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="SWITCH"/>
+          </CONNECTIONS>
+        </PORT>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="ps7_0_axi_periph_M02_AXI" DATAWIDTH="32" NAME="s_axi_fir_io" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
@@ -1311,7 +1318,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="2113846888" FULLNAME="/fir_1" HWVERSION="1.0" INSTANCE="fir_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="fir" VLNV="xilinx.com:hls:fir:1.0">
+    <MODULE COREREVISION="2113857137" FULLNAME="/fir_1" HWVERSION="1.0" INSTANCE="fir_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="fir" VLNV="xilinx.com:hls:fir:1.0">
       <DOCUMENTS/>
       <ADDRESSBLOCKS>
         <ADDRESSBLOCK ACCESS="read-write" INTERFACE="s_axi_fir_io" NAME="Reg" RANGE="65536" USAGE="register">
@@ -1622,11 +1629,11 @@
       <PARAMETERS>
         <PARAMETER NAME="C_S_AXI_FIR_IO_ADDR_WIDTH" VALUE="6"/>
         <PARAMETER NAME="C_S_AXI_FIR_IO_DATA_WIDTH" VALUE="32"/>
-        <PARAMETER NAME="Component_Name" VALUE="design_1_fir_1_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_fir_1_2"/>
         <PARAMETER NAME="clk_period" VALUE="10"/>
         <PARAMETER NAME="machine" VALUE="64"/>
         <PARAMETER NAME="combinational" VALUE="0"/>
-        <PARAMETER NAME="latency" VALUE="68"/>
+        <PARAMETER NAME="latency" VALUE="70"/>
         <PARAMETER NAME="II" VALUE="x"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
         <PARAMETER NAME="C_S_AXI_FIR_IO_BASEADDR" VALUE="0x40010000"/>
@@ -1731,6 +1738,11 @@
         <PORT DIR="O" NAME="interrupt" SENSITIVITY="LEVEL_HIGH" SIGIS="INTERRUPT" SIGNAME="fir_1_interrupt">
           <CONNECTIONS>
             <CONNECTION INSTANCE="xlconcat_0" PORT="In1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="switch_var" SIGIS="data" SIGNAME="External_Ports_SWITCH">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="SWITCH"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -2971,10 +2983,10 @@
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="ACLK"/>
             <CONNECTION INSTANCE="audio_codec_ctrl_0" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M01_ACLK"/>
-            <CONNECTION INSTANCE="fir_0" PORT="ap_clk"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M02_ACLK"/>
-            <CONNECTION INSTANCE="fir_1" PORT="ap_clk"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M03_ACLK"/>
+            <CONNECTION INSTANCE="fir_0" PORT="ap_clk"/>
+            <CONNECTION INSTANCE="fir_1" PORT="ap_clk"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="10000000" DIR="O" NAME="FCLK_CLK1" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK1">
@@ -3588,6 +3600,36 @@
             <CONNECTION INSTANCE="rst_ps7_0_100M" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="I" NAME="M01_ACLK" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M01_ARESETN" SIGIS="rst" SIGNAME="rst_ps7_0_100M_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rst_ps7_0_100M" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M02_ACLK" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M02_ARESETN" SIGIS="rst" SIGNAME="rst_ps7_0_100M_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rst_ps7_0_100M" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M03_ACLK" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M03_ARESETN" SIGIS="rst" SIGNAME="rst_ps7_0_100M_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rst_ps7_0_100M" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="I" LEFT="11" NAME="S00_AXI_awid" RIGHT="0" SIGIS="undef" SIGNAME="processing_system7_0_M_AXI_GP0_AWID">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0" PORT="M_AXI_GP0_AWID"/>
@@ -3865,29 +3907,12 @@
             <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_rready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M01_ACLK" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M01_ARESETN" SIGIS="rst" SIGNAME="rst_ps7_0_100M_peripheral_aresetn">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rst_ps7_0_100M" PORT="peripheral_aresetn"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="O" LEFT="31" NAME="M01_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="audio_codec_ctrl_0_s_axi_awaddr">
           <CONNECTIONS>
             <CONNECTION INSTANCE="audio_codec_ctrl_0" PORT="s_axi_awaddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M01_AXI_awlen" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M01_AXI_awsize" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M01_AXI_awburst" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M01_AXI_awlock" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M01_AXI_awcache" SIGIS="undef"/>
         <PORT DIR="O" NAME="M01_AXI_awprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M01_AXI_awregion" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M01_AXI_awqos" SIGIS="undef"/>
         <PORT DIR="O" NAME="M01_AXI_awvalid" SIGIS="undef" SIGNAME="audio_codec_ctrl_0_s_axi_awvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="audio_codec_ctrl_0" PORT="s_axi_awvalid"/>
@@ -3908,7 +3933,6 @@
             <CONNECTION INSTANCE="audio_codec_ctrl_0" PORT="s_axi_wstrb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M01_AXI_wlast" SIGIS="undef"/>
         <PORT DIR="O" NAME="M01_AXI_wvalid" SIGIS="undef" SIGNAME="audio_codec_ctrl_0_s_axi_wvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="audio_codec_ctrl_0" PORT="s_axi_wvalid"/>
@@ -3939,14 +3963,7 @@
             <CONNECTION INSTANCE="audio_codec_ctrl_0" PORT="s_axi_araddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M01_AXI_arlen" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M01_AXI_arsize" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M01_AXI_arburst" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M01_AXI_arlock" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M01_AXI_arcache" SIGIS="undef"/>
         <PORT DIR="O" NAME="M01_AXI_arprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M01_AXI_arregion" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M01_AXI_arqos" SIGIS="undef"/>
         <PORT DIR="O" NAME="M01_AXI_arvalid" SIGIS="undef" SIGNAME="audio_codec_ctrl_0_s_axi_arvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="audio_codec_ctrl_0" PORT="s_axi_arvalid"/>
@@ -3967,7 +3984,6 @@
             <CONNECTION INSTANCE="audio_codec_ctrl_0" PORT="s_axi_rresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M01_AXI_rlast" SIGIS="undef"/>
         <PORT DIR="I" NAME="M01_AXI_rvalid" SIGIS="undef" SIGNAME="audio_codec_ctrl_0_s_axi_rvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="audio_codec_ctrl_0" PORT="s_axi_rvalid"/>
@@ -3976,16 +3992,6 @@
         <PORT DIR="O" NAME="M01_AXI_rready" SIGIS="undef" SIGNAME="audio_codec_ctrl_0_s_axi_rready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="audio_codec_ctrl_0" PORT="s_axi_rready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M02_ACLK" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M02_ARESETN" SIGIS="rst" SIGNAME="rst_ps7_0_100M_peripheral_aresetn">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rst_ps7_0_100M" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="31" NAME="M02_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="fir_0_s_axi_fir_io_AWADDR">
@@ -4073,16 +4079,6 @@
         <PORT DIR="O" NAME="M02_AXI_rready" SIGIS="undef" SIGNAME="fir_0_s_axi_fir_io_RREADY">
           <CONNECTIONS>
             <CONNECTION INSTANCE="fir_0" PORT="s_axi_fir_io_RREADY"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M03_ACLK" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M03_ARESETN" SIGIS="rst" SIGNAME="rst_ps7_0_100M_peripheral_aresetn">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rst_ps7_0_100M" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="31" NAME="M03_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="fir_1_s_axi_fir_io_AWADDR">
@@ -4242,38 +4238,22 @@
         <BUSINTERFACE BUSNAME="ps7_0_axi_periph_M01_AXI" DATAWIDTH="32" NAME="M01_AXI" TYPE="MASTER" VLNV="xilinx.com:interface:aximm:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="AWADDR" PHYSICAL="M01_AXI_awaddr"/>
-            <PORTMAP LOGICAL="AWLEN" PHYSICAL="M01_AXI_awlen"/>
-            <PORTMAP LOGICAL="AWSIZE" PHYSICAL="M01_AXI_awsize"/>
-            <PORTMAP LOGICAL="AWBURST" PHYSICAL="M01_AXI_awburst"/>
-            <PORTMAP LOGICAL="AWLOCK" PHYSICAL="M01_AXI_awlock"/>
-            <PORTMAP LOGICAL="AWCACHE" PHYSICAL="M01_AXI_awcache"/>
             <PORTMAP LOGICAL="AWPROT" PHYSICAL="M01_AXI_awprot"/>
-            <PORTMAP LOGICAL="AWREGION" PHYSICAL="M01_AXI_awregion"/>
-            <PORTMAP LOGICAL="AWQOS" PHYSICAL="M01_AXI_awqos"/>
             <PORTMAP LOGICAL="AWVALID" PHYSICAL="M01_AXI_awvalid"/>
             <PORTMAP LOGICAL="AWREADY" PHYSICAL="M01_AXI_awready"/>
             <PORTMAP LOGICAL="WDATA" PHYSICAL="M01_AXI_wdata"/>
             <PORTMAP LOGICAL="WSTRB" PHYSICAL="M01_AXI_wstrb"/>
-            <PORTMAP LOGICAL="WLAST" PHYSICAL="M01_AXI_wlast"/>
             <PORTMAP LOGICAL="WVALID" PHYSICAL="M01_AXI_wvalid"/>
             <PORTMAP LOGICAL="WREADY" PHYSICAL="M01_AXI_wready"/>
             <PORTMAP LOGICAL="BRESP" PHYSICAL="M01_AXI_bresp"/>
             <PORTMAP LOGICAL="BVALID" PHYSICAL="M01_AXI_bvalid"/>
             <PORTMAP LOGICAL="BREADY" PHYSICAL="M01_AXI_bready"/>
             <PORTMAP LOGICAL="ARADDR" PHYSICAL="M01_AXI_araddr"/>
-            <PORTMAP LOGICAL="ARLEN" PHYSICAL="M01_AXI_arlen"/>
-            <PORTMAP LOGICAL="ARSIZE" PHYSICAL="M01_AXI_arsize"/>
-            <PORTMAP LOGICAL="ARBURST" PHYSICAL="M01_AXI_arburst"/>
-            <PORTMAP LOGICAL="ARLOCK" PHYSICAL="M01_AXI_arlock"/>
-            <PORTMAP LOGICAL="ARCACHE" PHYSICAL="M01_AXI_arcache"/>
             <PORTMAP LOGICAL="ARPROT" PHYSICAL="M01_AXI_arprot"/>
-            <PORTMAP LOGICAL="ARREGION" PHYSICAL="M01_AXI_arregion"/>
-            <PORTMAP LOGICAL="ARQOS" PHYSICAL="M01_AXI_arqos"/>
             <PORTMAP LOGICAL="ARVALID" PHYSICAL="M01_AXI_arvalid"/>
             <PORTMAP LOGICAL="ARREADY" PHYSICAL="M01_AXI_arready"/>
             <PORTMAP LOGICAL="RDATA" PHYSICAL="M01_AXI_rdata"/>
             <PORTMAP LOGICAL="RRESP" PHYSICAL="M01_AXI_rresp"/>
-            <PORTMAP LOGICAL="RLAST" PHYSICAL="M01_AXI_rlast"/>
             <PORTMAP LOGICAL="RVALID" PHYSICAL="M01_AXI_rvalid"/>
             <PORTMAP LOGICAL="RREADY" PHYSICAL="M01_AXI_rready"/>
           </PORTMAPS>
@@ -4371,10 +4351,10 @@
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="ARESETN"/>
             <CONNECTION INSTANCE="audio_codec_ctrl_0" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M01_ARESETN"/>
-            <CONNECTION INSTANCE="fir_0" PORT="ap_rst_n"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M02_ARESETN"/>
-            <CONNECTION INSTANCE="fir_1" PORT="ap_rst_n"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M03_ARESETN"/>
+            <CONNECTION INSTANCE="fir_0" PORT="ap_rst_n"/>
+            <CONNECTION INSTANCE="fir_1" PORT="ap_rst_n"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

@@ -1,32 +1,10 @@
-14:26:18 **** Incremental Build of configuration Debug for project audio_vitis ****
+18:33:06 **** Incremental Build of configuration Debug for project audio_vitis ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
-'Building file: ../src/pynq_z2_testapp.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pynq_z2_testapp.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IF:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio/export/audio/sw/audio/standalone_domain/bspinclude/include -MMD -MP -MF"src/pynq_z2_testapp.d" -MT"src/pynq_z2_testapp.o" -o "src/pynq_z2_testapp.o" "../src/pynq_z2_testapp.c"
-../src/pynq_z2_testapp.c: In function 'filter_or_bypass_input':
-../src/pynq_z2_testapp.c:184:21: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
-  184 |                     while(!ResultAvailHlsFir_right);
-      |                     ^~~~~
-../src/pynq_z2_testapp.c:185:25: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'while'
-  185 |                         u32DataR = XFir_Get_y(&HlsFir_right);
-      |                         ^~~~~~~~
-'Finished building: ../src/pynq_z2_testapp.c'
-' '
-'Building target: audio_vitis.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LF:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio/export/audio/sw/audio/standalone_domain/bsplib/lib -o "audio_vitis.elf"  ./src/pynq_z2_testapp.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: audio_vitis.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size audio_vitis.elf  |tee "audio_vitis.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  37295	   1960	  22712	  61967	   f20f	audio_vitis.elf
-'Finished building: audio_vitis.elf.size'
-' '
+make[1]: Nothing to be done for 'main-build'.
 
-14:26:19 Build Finished (took 905ms)
+18:33:06 Build Finished (took 243ms)
 

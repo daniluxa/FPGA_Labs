@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-//Date        : Sun Dec  1 19:27:36 2024
+//Date        : Sun Dec  8 18:18:07 2024
 //Host        : DESKTOP-2ENERJB running 64-bit major release  (build 9200)
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -40,7 +40,8 @@ module design_1_wrapper
     IIC_1_sda_io,
     LRCLK,
     SDATA_I,
-    SDATA_O);
+    SDATA_O,
+    SWITCH);
   output BCLK;
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
@@ -71,6 +72,7 @@ module design_1_wrapper
   output LRCLK;
   input SDATA_I;
   output SDATA_O;
+  input SWITCH;
 
   wire BCLK;
   wire [14:0]DDR_addr;
@@ -115,6 +117,7 @@ module design_1_wrapper
   wire LRCLK;
   wire SDATA_I;
   wire SDATA_O;
+  wire SWITCH;
 
   IOBUF GPIO_tri_iobuf_0
        (.I(GPIO_tri_o_0),
@@ -172,5 +175,6 @@ module design_1_wrapper
         .IIC_1_sda_t(IIC_1_sda_t),
         .LRCLK(LRCLK),
         .SDATA_I(SDATA_I),
-        .SDATA_O(SDATA_O));
+        .SDATA_O(SDATA_O),
+        .SWITCH(SWITCH));
 endmodule

@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-//Date        : Sun Dec  1 19:27:36 2024
+//Date        : Sun Dec  8 18:18:07 2024
 //Host        : DESKTOP-2ENERJB running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=15,numReposBlks=9,numNonXlnxBlks=0,numHierBlks=6,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=2,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=5,da_board_cnt=2,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=15,numReposBlks=9,numNonXlnxBlks=0,numHierBlks=6,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=2,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=9,da_board_cnt=2,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
    (BCLK,
     DDR_addr,
@@ -47,7 +47,8 @@ module design_1
     IIC_1_sda_t,
     LRCLK,
     SDATA_I,
-    SDATA_O);
+    SDATA_O,
+    SWITCH);
   output BCLK;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR ADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DDR, AXI_ARBITRATION_SCHEME TDM, BURST_LENGTH 8, CAN_DEBUG false, CAS_LATENCY 11, CAS_WRITE_LATENCY 11, CS_ENABLED true, DATA_MASK_ENABLED true, DATA_WIDTH 8, MEMORY_TYPE COMPONENTS, MEM_ADDR_MAP ROW_COLUMN_BANK, SLOT Single, TIMEPERIOD_PS 1250" *) inout [14:0]DDR_addr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR BA" *) inout [2:0]DDR_ba;
@@ -71,23 +72,25 @@ module design_1
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_CLK" *) inout FIXED_IO_ps_clk;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB" *) inout FIXED_IO_ps_porb;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB" *) inout FIXED_IO_ps_srstb;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO2 " *) input [0:0]GPIO2_tri_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO " *) input [1:0]GPIO_tri_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO " *) output [1:0]GPIO_tri_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO " *) output [1:0]GPIO_tri_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_1 " *) input IIC_1_scl_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_1 " *) output IIC_1_scl_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_1 " *) output IIC_1_scl_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_1 " *) input IIC_1_sda_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_1 " *) output IIC_1_sda_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_1 " *) output IIC_1_sda_t;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO2 TRI_I" *) input [0:0]GPIO2_tri_i;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO TRI_I" *) input [1:0]GPIO_tri_i;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO TRI_O" *) output [1:0]GPIO_tri_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO TRI_T" *) output [1:0]GPIO_tri_t;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_1 SCL_I" *) input IIC_1_scl_i;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_1 SCL_O" *) output IIC_1_scl_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_1 SCL_T" *) output IIC_1_scl_t;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_1 SDA_I" *) input IIC_1_sda_i;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_1 SDA_O" *) output IIC_1_sda_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_1 SDA_T" *) output IIC_1_sda_t;
   output LRCLK;
   input SDATA_I;
   output SDATA_O;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.SWITCH DATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.SWITCH, LAYERED_METADATA undef" *) input SWITCH;
 
   wire [1:0]GPIO_TRI_I;
   wire [1:0]GPIO_TRI_O;
   wire [1:0]GPIO_TRI_T;
+  wire SWITCH_1;
   wire audio_codec_ctrl_0_bclk;
   wire audio_codec_ctrl_0_lrclk;
   wire audio_codec_ctrl_0_sdata_o;
@@ -245,6 +248,7 @@ module design_1
   assign IIC_1_sda_t = processing_system7_0_IIC_1_SDA_T;
   assign LRCLK = audio_codec_ctrl_0_lrclk;
   assign SDATA_O = audio_codec_ctrl_0_sdata_o;
+  assign SWITCH_1 = SWITCH;
   assign axi_gpio_0_GPIO2_TRI_I = GPIO2_tri_i[0];
   assign processing_system7_0_IIC_1_SCL_I = IIC_1_scl_i;
   assign processing_system7_0_IIC_1_SDA_I = IIC_1_sda_i;
@@ -297,7 +301,7 @@ module design_1
         .s_axi_wready(ps7_0_axi_periph_M00_AXI_WREADY),
         .s_axi_wstrb(ps7_0_axi_periph_M00_AXI_WSTRB),
         .s_axi_wvalid(ps7_0_axi_periph_M00_AXI_WVALID));
-  design_1_fir_0_0 fir_0
+  design_1_fir_0_4 fir_0
        (.ap_clk(processing_system7_0_FCLK_CLK0),
         .ap_rst_n(rst_ps7_0_100M_peripheral_aresetn),
         .interrupt(fir_0_interrupt),
@@ -317,8 +321,9 @@ module design_1
         .s_axi_fir_io_WDATA(ps7_0_axi_periph_M02_AXI_WDATA),
         .s_axi_fir_io_WREADY(ps7_0_axi_periph_M02_AXI_WREADY),
         .s_axi_fir_io_WSTRB(ps7_0_axi_periph_M02_AXI_WSTRB),
-        .s_axi_fir_io_WVALID(ps7_0_axi_periph_M02_AXI_WVALID));
-  design_1_fir_1_0 fir_1
+        .s_axi_fir_io_WVALID(ps7_0_axi_periph_M02_AXI_WVALID),
+        .switch_var(SWITCH_1));
+  design_1_fir_1_2 fir_1
        (.ap_clk(processing_system7_0_FCLK_CLK0),
         .ap_rst_n(rst_ps7_0_100M_peripheral_aresetn),
         .interrupt(fir_1_interrupt),
@@ -338,7 +343,8 @@ module design_1
         .s_axi_fir_io_WDATA(ps7_0_axi_periph_M03_AXI_WDATA),
         .s_axi_fir_io_WREADY(ps7_0_axi_periph_M03_AXI_WREADY),
         .s_axi_fir_io_WSTRB(ps7_0_axi_periph_M03_AXI_WSTRB),
-        .s_axi_fir_io_WVALID(ps7_0_axi_periph_M03_AXI_WVALID));
+        .s_axi_fir_io_WVALID(ps7_0_axi_periph_M03_AXI_WVALID),
+        .switch_var(SWITCH_1));
   design_1_processing_system7_0_0 processing_system7_0
        (.DDR_Addr(DDR_addr[14:0]),
         .DDR_BankAddr(DDR_ba[2:0]),

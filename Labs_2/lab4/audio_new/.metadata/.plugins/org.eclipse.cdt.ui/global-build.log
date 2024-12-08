@@ -1,31 +1,16 @@
-Nothing to build in platform 'audio'
+Nothing to build in platform 'design_1_wrapper_iz3'
 
-14:26:18 **** Incremental Build of configuration Debug for project audio_vitis ****
+18:35:03 **** Incremental Build of configuration Debug for project iz_3_popytka ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
-'Building file: ../src/pynq_z2_testapp.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pynq_z2_testapp.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IF:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio/export/audio/sw/audio/standalone_domain/bspinclude/include -MMD -MP -MF"src/pynq_z2_testapp.d" -MT"src/pynq_z2_testapp.o" -o "src/pynq_z2_testapp.o" "../src/pynq_z2_testapp.c"
-../src/pynq_z2_testapp.c: In function 'filter_or_bypass_input':
-../src/pynq_z2_testapp.c:184:21: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
-  184 |                     while(!ResultAvailHlsFir_right);
-      |                     ^~~~~
-../src/pynq_z2_testapp.c:185:25: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'while'
-  185 |                         u32DataR = XFir_Get_y(&HlsFir_right);
-      |                         ^~~~~~~~
-'Finished building: ../src/pynq_z2_testapp.c'
-' '
-'Building target: audio_vitis.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LF:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio/export/audio/sw/audio/standalone_domain/bsplib/lib -o "audio_vitis.elf"  ./src/pynq_z2_testapp.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: audio_vitis.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size audio_vitis.elf  |tee "audio_vitis.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  37295	   1960	  22712	  61967	   f20f	audio_vitis.elf
-'Finished building: audio_vitis.elf.size'
-' '
+make[1]: Nothing to be done for 'main-build'.
+18:35:04 **** Incremental Build of configuration Debug for project iz_3_popytka_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 64237 F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/design_1_wrapper_iz3/export/design_1_wrapper_iz3/design_1_wrapper_iz3.xpfm standalone_ps7_cortexa9_0 F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/iz_3_popytka_system/Debug/system.bif
+sdcard_gen --xpfm F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/design_1_wrapper_iz3/export/design_1_wrapper_iz3/design_1_wrapper_iz3.xpfm --sys_config design_1_wrapper_iz3 --bif F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/iz_3_popytka_system/Debug/system.bif --bitstream F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/iz_3_popytka/_ide/bitstream/design_1_wrapper_iz3.bit --elf F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/iz_3_popytka/Debug/iz_3_popytka.elf,ps7_cortexa9_0
+creating BOOT.BIN using F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/iz_3_popytka/_ide/bitstream/design_1_wrapper_iz3.bit
+Running F:/Xilinx/Vitis/Vitis/2023.1/bin/bootgen  -image F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/iz_3_popytka_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

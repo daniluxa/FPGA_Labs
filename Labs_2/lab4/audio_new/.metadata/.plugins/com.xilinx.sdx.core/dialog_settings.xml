@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item key="sdx.custom.platform.repository.locations" value="F:\Education\FPGA_Labs\Labs_2\lab4\audio_new\audio\export\audio"/>
+	<item key="sdx.custom.platform.repository.locations" value="F:\Education\FPGA_Labs\Labs_2\lab4\audio_new\audio\export\audio;F:\Education\FPGA_Labs\Labs_2\lab4\audio_new\design_1_wrapper_iz\export\design_1_wrapper_iz;F:\Education\FPGA_Labs\Labs_2\lab4\audio_new\design_1_wrapper_iz3\export\design_1_wrapper_iz3"/>
 </section>

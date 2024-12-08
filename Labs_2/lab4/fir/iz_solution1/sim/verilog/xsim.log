@@ -1,0 +1,97 @@
+#-----------------------------------------------------------
+# xsim v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sun Dec  8 18:16:58 2024
+# Process ID: 13240
+# Current directory: F:/Education/FPGA_Labs/Labs_2/lab4/fir/iz_solution1/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/fir/xsim_script.tcl}
+# Log file: F:/Education/FPGA_Labs/Labs_2/lab4/fir/iz_solution1/sim/verilog/xsim.log
+# Journal file: F:/Education/FPGA_Labs/Labs_2/lab4/fir/iz_solution1/sim/verilog\xsim.jou
+# Running On: DESKTOP-2ENERJB, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 6, Host memory: 34191 MB
+#-----------------------------------------------------------
+source xsim.dir/fir/xsim_script.tcl
+# xsim {fir} -autoloadwcfg -tclbatch {fir.tcl}
+Time resolution is 1 ps
+source fir.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 68 [0.00%] @ "125000"
+// RTL Simulation : 1 / 68 [15.71%] @ "1205000"
+// RTL Simulation : 2 / 68 [15.71%] @ "2275000"
+// RTL Simulation : 3 / 68 [15.71%] @ "3305000"
+// RTL Simulation : 4 / 68 [15.71%] @ "4335000"
+// RTL Simulation : 5 / 68 [15.71%] @ "5365000"
+// RTL Simulation : 6 / 68 [15.71%] @ "6395000"
+// RTL Simulation : 7 / 68 [15.71%] @ "7425000"
+// RTL Simulation : 8 / 68 [15.71%] @ "8455000"
+// RTL Simulation : 9 / 68 [15.71%] @ "9485000"
+// RTL Simulation : 10 / 68 [15.71%] @ "10515000"
+// RTL Simulation : 11 / 68 [15.71%] @ "11545000"
+// RTL Simulation : 12 / 68 [15.71%] @ "12575000"
+// RTL Simulation : 13 / 68 [15.71%] @ "13605000"
+// RTL Simulation : 14 / 68 [15.71%] @ "14635000"
+// RTL Simulation : 15 / 68 [15.71%] @ "15665000"
+// RTL Simulation : 16 / 68 [15.71%] @ "16695000"
+// RTL Simulation : 17 / 68 [15.71%] @ "17725000"
+// RTL Simulation : 18 / 68 [15.71%] @ "18755000"
+// RTL Simulation : 19 / 68 [15.71%] @ "19785000"
+// RTL Simulation : 20 / 68 [15.71%] @ "20815000"
+// RTL Simulation : 21 / 68 [15.71%] @ "21845000"
+// RTL Simulation : 22 / 68 [15.71%] @ "22875000"
+// RTL Simulation : 23 / 68 [15.71%] @ "23905000"
+// RTL Simulation : 24 / 68 [15.71%] @ "24935000"
+// RTL Simulation : 25 / 68 [15.71%] @ "25965000"
+// RTL Simulation : 26 / 68 [15.71%] @ "26995000"
+// RTL Simulation : 27 / 68 [15.71%] @ "28025000"
+// RTL Simulation : 28 / 68 [15.71%] @ "29055000"
+// RTL Simulation : 29 / 68 [15.71%] @ "30085000"
+// RTL Simulation : 30 / 68 [15.71%] @ "31115000"
+// RTL Simulation : 31 / 68 [15.71%] @ "32145000"
+// RTL Simulation : 32 / 68 [15.71%] @ "33175000"
+// RTL Simulation : 33 / 68 [15.71%] @ "34205000"
+// RTL Simulation : 34 / 68 [15.71%] @ "35235000"
+// RTL Simulation : 35 / 68 [15.71%] @ "36265000"
+// RTL Simulation : 36 / 68 [15.71%] @ "37295000"
+// RTL Simulation : 37 / 68 [15.71%] @ "38325000"
+// RTL Simulation : 38 / 68 [15.71%] @ "39355000"
+// RTL Simulation : 39 / 68 [15.71%] @ "40385000"
+// RTL Simulation : 40 / 68 [15.71%] @ "41415000"
+// RTL Simulation : 41 / 68 [15.71%] @ "42445000"
+// RTL Simulation : 42 / 68 [15.71%] @ "43475000"
+// RTL Simulation : 43 / 68 [15.71%] @ "44505000"
+// RTL Simulation : 44 / 68 [15.71%] @ "45535000"
+// RTL Simulation : 45 / 68 [15.71%] @ "46565000"
+// RTL Simulation : 46 / 68 [15.71%] @ "47595000"
+// RTL Simulation : 47 / 68 [15.71%] @ "48625000"
+// RTL Simulation : 48 / 68 [15.71%] @ "49655000"
+// RTL Simulation : 49 / 68 [15.71%] @ "50685000"
+// RTL Simulation : 50 / 68 [15.71%] @ "51715000"
+// RTL Simulation : 51 / 68 [15.71%] @ "52745000"
+// RTL Simulation : 52 / 68 [15.71%] @ "53775000"
+// RTL Simulation : 53 / 68 [15.71%] @ "54805000"
+// RTL Simulation : 54 / 68 [15.71%] @ "55835000"
+// RTL Simulation : 55 / 68 [15.71%] @ "56865000"
+// RTL Simulation : 56 / 68 [15.71%] @ "57895000"
+// RTL Simulation : 57 / 68 [15.71%] @ "58925000"
+// RTL Simulation : 58 / 68 [15.71%] @ "59955000"
+// RTL Simulation : 59 / 68 [15.71%] @ "60985000"
+// RTL Simulation : 60 / 68 [15.71%] @ "62015000"
+// RTL Simulation : 61 / 68 [15.71%] @ "63045000"
+// RTL Simulation : 62 / 68 [15.71%] @ "64075000"
+// RTL Simulation : 63 / 68 [15.71%] @ "65105000"
+// RTL Simulation : 64 / 68 [15.71%] @ "66135000"
+// RTL Simulation : 65 / 68 [15.71%] @ "67165000"
+// RTL Simulation : 66 / 68 [15.71%] @ "68195000"
+// RTL Simulation : 67 / 68 [15.71%] @ "69225000"
+// RTL Simulation : 68 / 68 [100.00%] @ "70255000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 70315 ns : File "F:/Education/FPGA_Labs/Labs_2/lab4/fir/iz_solution1/sim/verilog/fir.autotb.v" Line 339
+## quit
+INFO: [Common 17-206] Exiting xsim at Sun Dec  8 18:17:00 2024...

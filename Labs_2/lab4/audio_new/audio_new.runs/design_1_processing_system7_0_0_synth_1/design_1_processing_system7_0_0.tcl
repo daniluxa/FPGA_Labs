@@ -86,7 +86,7 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:zedboard:part0:1.1 [current_project]
 set_property ip_repo_paths {
-  f:/Education/FPGA_Labs/Labs_2/lab4/fir/solution1/impl/ip
+  f:/Education/FPGA_Labs/Labs_2/lab4/fir/iz_solution1/impl
   f:/Education/FPGA_Labs/Labs_2/lab4/audio_codec_ctrl_v1.0
 } [current_project]
 update_ip_catalog

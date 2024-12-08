@@ -1,0 +1,73 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "fir",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "fir"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "F:/Education/FPGA_Labs/Labs_2/lab4/fir/iz_solution1/directives.tcl",
+    "sourceLine": 7,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "fir",
+    "id": 1,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "INTERFACE",
+      "option": [
+        {
+          "name": "s_axilite",
+          "value": ""
+        },
+        {
+          "name": "bundle",
+          "value": "fir_io"
+        },
+        {
+          "name": "port",
+          "value": "return"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "F:/Education/FPGA_Labs/Labs_2/lab4/fir/iz_solution1/directives.tcl",
+    "sourceLine": 8,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "fir",
+    "id": 2,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "fir"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "F:/Education/FPGA_Labs/Labs_2/lab4/fir/iz_solution1/csynth.tcl",
+    "sourceLine": 19,
+    "success": true
+  }
+]

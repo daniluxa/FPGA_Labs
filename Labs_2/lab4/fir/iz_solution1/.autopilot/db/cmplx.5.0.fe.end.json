@@ -1,0 +1,38 @@
+{
+    "0": {
+        "name": "fir",
+        "file": "fir.cpp",
+        "fileloc": "3",
+        "instructions": "28",
+        "total_instructions": "66",
+        "calls": "1",
+        "basicblocks": "1",
+        "loads": {
+            "G": "1",
+            "L": "1"
+        },
+        "stores": {
+            "G": "1"
+        }
+    },
+    "1": {
+        "name": "fir_Pipeline_loop",
+        "file": "fir.cpp",
+        "fileloc": "0",
+        "instructions": "38",
+        "total_instructions": "38",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "3",
+            "L": "2"
+        },
+        "stores": {
+            "G": "1",
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

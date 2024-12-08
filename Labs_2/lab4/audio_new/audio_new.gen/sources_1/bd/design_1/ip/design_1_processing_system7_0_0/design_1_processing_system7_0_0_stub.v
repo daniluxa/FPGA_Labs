@@ -2,7 +2,7 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-// Date        : Sun Dec  1 17:11:40 2024
+// Date        : Sun Dec  8 17:05:32 2024
 // Host        : DESKTOP-2ENERJB running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0_stub.v

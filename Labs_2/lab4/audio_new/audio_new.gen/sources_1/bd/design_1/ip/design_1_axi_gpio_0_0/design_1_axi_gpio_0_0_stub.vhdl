@@ -4,8 +4,8 @@
 -- Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
 -- Date        : Sun Dec  1 19:28:35 2024
 -- Host        : DESKTOP-2ENERJB running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top design_1_axi_gpio_0_0 -prefix
+--               design_1_axi_gpio_0_0_ design_1_axi_gpio_0_0_stub.vhdl
 -- Design      : design_1_axi_gpio_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg484-1

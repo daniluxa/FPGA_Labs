@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="fir_coef.dat" path="F:\Education\FPGA_Labs\Labs_2\xup_high_level_synthesis_design_flow-main\source\lab4\fir_coef.dat"/>
     <originFiles name="fir.cpp" path="F:\Education\FPGA_Labs\Labs_2\xup_high_level_synthesis_design_flow-main\source\lab4\fir.cpp"/>
+    <originFiles name="fir_coef.dat" path="F:\Education\FPGA_Labs\Labs_2\xup_high_level_synthesis_design_flow-main\source\lab4\fir_coef.dat"/>
+    <originFiles name="fir_coef_2.dat" path="F:\Education\FPGA_Labs\Labs_2\xup_high_level_synthesis_design_flow-main\source\lab4\fir_coef_2.dat"/>
   </source>
   <testbench>
     <originFiles name="fir_test.cpp" path="F:\Education\FPGA_Labs\Labs_2\xup_high_level_synthesis_design_flow-main\source\lab4\fir_test.cpp"/>

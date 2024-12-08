@@ -17,3 +17,4 @@ platform generate -domains
 platform active {audio}
 platform active {audio}
 platform generate
+platform write

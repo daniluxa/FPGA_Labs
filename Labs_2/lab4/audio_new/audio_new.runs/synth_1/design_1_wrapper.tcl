@@ -85,26 +85,26 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:zedboard:part0:1.1 [current_project]
 set_property ip_repo_paths {
-  f:/Education/FPGA_Labs/Labs_2/lab4/fir/solution1/impl/ip
   f:/Education/FPGA_Labs/Labs_2/lab4/audio_codec_ctrl_v1.0
+  f:/Education/FPGA_Labs/Labs_2/lab4/fir/iz_solution1/impl
 } [current_project]
 update_ip_catalog
 set_property ip_output_repo f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+read_verilog -library xil_defaultlib F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
 add_files F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.srcs/sources_1/bd/design_1/design_1.bd
 set_property used_in_implementation false [get_files -all f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]
 set_property used_in_implementation false [get_files -all f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc]
+set_property used_in_implementation false [get_files -all f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc]
 set_property used_in_implementation false [get_files -all f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc]
 set_property used_in_implementation false [get_files -all f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/ip/design_1_fir_0_0/constraints/fir_ooc.xdc]
-set_property used_in_implementation false [get_files -all f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/ip/design_1_fir_1_0/constraints/fir_ooc.xdc]
+set_property used_in_implementation false [get_files -all f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/ip/design_1_fir_0_4/constraints/fir_ooc.xdc]
+set_property used_in_implementation false [get_files -all f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/ip/design_1_fir_1_2/constraints/fir_ooc.xdc]
 set_property used_in_implementation false [get_files -all f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all f:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_new.gen/sources_1/bd/design_1/design_1_ooc.xdc]
 
