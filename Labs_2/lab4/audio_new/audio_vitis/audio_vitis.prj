@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="audio_vitis" location="F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio_vitis" platform="F:/Education/FPGA_Labs/Labs_2/lab4/audio_new/audio/export/audio/audio.xpfm" platformUID="xilinx:zedboard::0.0(custom)" systemProject="audio_vitis_system" sysConfig="audio" runtime="C/C++" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="4256864065b4ac50da11ace1cf5b75bf">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.2021672263">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.486969957" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>
